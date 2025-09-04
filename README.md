@@ -1,3 +1,7 @@
+# MoharChessSchool
+
+This is the official website for MoharChess - a comprehensive chess education platform offering classes, tournaments, and programs for all ages and skill levels.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
