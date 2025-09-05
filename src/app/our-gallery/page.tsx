@@ -39,7 +39,7 @@ export default function OurGallery() {
               </h2>
               <p className="text-gray-200 mb-8 text-lg">
                 Check out our comprehensive gallery featuring photos and videos from chess classes, 
-                tournaments, student achievements, and special events at MoharChess.
+                tournaments, and special events at MoharChess.
               </p>
               <Link 
                 href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
@@ -85,16 +85,6 @@ export default function OurGallery() {
                 </p>
               </div>
 
-              {/* Student Achievements */}
-              <div className="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow duration-300">
-                <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FaImages className="text-orange-500 text-2xl" />
-                </div>
-                <h3 className="text-xl font-semibold text-teal-800 mb-3">Achievements</h3>
-                <p className="text-gray-600">
-                  Celebrating our students&apos; progress and tournament victories
-                </p>
-              </div>
 
               {/* Special Events */}
               <div className="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow duration-300">

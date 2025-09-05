@@ -46,11 +46,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/achievements" className="text-gray-300 hover:text-white transition-colors">
-                  Achievements
-                </Link>
-              </li>
-              <li>
                 <Link href="/our-gallery" className="text-gray-300 hover:text-white transition-colors">
                   Our Gallery
                 </Link>
