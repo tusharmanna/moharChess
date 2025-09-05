@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FaGraduationCap, FaLaptop, FaClock, FaCheckCircle, FaEnvelope } from "react-icons/fa";
 

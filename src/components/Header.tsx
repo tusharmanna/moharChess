@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaEnvelope, FaPhoneVolume, FaWhatsapp, FaFacebookF, FaYoutube, FaInstagram, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneVolume, FaWhatsapp, FaFacebookF, FaInstagram, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

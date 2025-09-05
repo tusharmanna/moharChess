@@ -21,7 +21,7 @@ export default function AboutUs() {
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               About Mohar Chess:<br />
-              <span className="text-orange-400">'Unlocking Potential Through Chess Education'</span>
+              <span className="text-orange-400">&apos;Unlocking Potential Through Chess Education&apos;</span>
             </h1>
           </div>
 
@@ -33,7 +33,7 @@ export default function AboutUs() {
               <div className="flex justify-center lg:justify-start">
                 <div className="relative">
                   <Image
-                    src="/images/mohua.jpg"
+                    src="/images/Mohua.jpg"
                     alt="Mohua Maity"
                     width={200}
                     height={200}

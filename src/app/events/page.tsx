@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaClock, FaTrophy, FaMapMarkerAlt, FaEnvelope, FaPhoneVolume, FaExclamationTriangle } from "react-icons/fa";
 

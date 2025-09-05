@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaEnvelope, FaPhoneVolume, FaMapMarkerAlt, FaWhatsapp, FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneVolume, FaMapMarkerAlt, FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
