@@ -165,16 +165,6 @@ export default function Enroll() {
       <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
               <span className="text-orange-400">ENROLL</span>
             </h1>

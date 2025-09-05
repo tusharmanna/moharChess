@@ -9,16 +9,6 @@ export default function OurGallery() {
       <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
               Our <span className="text-orange-400">Gallery</span>
             </h1>
@@ -280,13 +270,7 @@ export default function OurGallery() {
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Join our chess classes and tournaments to become part of the MoharChess community!
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/forms-and-links" 
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
-            >
-              ENROLL NOW
-            </Link>
+          <div className="flex justify-center">
             <Link 
               href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
               target="_blank"

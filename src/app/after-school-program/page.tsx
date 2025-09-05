@@ -10,16 +10,6 @@ export default function AfterSchoolProgram() {
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               After School Chess Program
             </h1>
@@ -45,8 +35,8 @@ export default function AfterSchoolProgram() {
                   width="100%" 
                   height="1750" 
                   frameBorder="0" 
-                  marginHeight="0" 
-                  marginWidth="0"
+                  marginHeight={0} 
+                  marginWidth={0}
                   title="After School Program Registration Form"
                 >
                   Loading…

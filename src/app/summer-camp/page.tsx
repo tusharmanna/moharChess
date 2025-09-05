@@ -9,16 +9,6 @@ export default function SummerCamp() {
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Summer Chess Camp
             </h1>
@@ -44,8 +34,8 @@ export default function SummerCamp() {
                   width="100%" 
                   height="1797" 
                   frameBorder="0" 
-                  marginHeight="0" 
-                  marginWidth="0"
+                  marginHeight={0} 
+                  marginWidth={0}
                   title="Summer Camp Registration Form"
                 >
                   Loading…

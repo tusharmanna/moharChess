@@ -10,16 +10,6 @@ export default function Workshops() {
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Chess Workshops
             </h1>

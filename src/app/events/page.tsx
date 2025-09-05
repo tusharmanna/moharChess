@@ -9,16 +9,6 @@ export default function UpcomingEvents() {
       <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
               Upcoming <span className="text-orange-400">Events</span>
             </h1>
@@ -208,13 +198,7 @@ export default function UpcomingEvents() {
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Join us for an exciting day of competitive chess! Perfect for players of all skill levels.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="mailto:mohar.chess@gmail.com?subject=Tournament Registration - October 12, 2025" 
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
-            >
-              Register Now
-            </Link>
+          <div className="flex justify-center">
             <Link 
               href="/contact-us" 
               className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"

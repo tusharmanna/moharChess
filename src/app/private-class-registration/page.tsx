@@ -46,11 +46,11 @@ export default function PrivateClassRegistration() {
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <Link 
-            href="/forms-and-links" 
+            href="/" 
             className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors"
           >
             <FaArrowLeft />
-            <span>Back to Enroll</span>
+            <span>Back to Home</span>
           </Link>
         </div>
       </div>
@@ -71,16 +71,6 @@ export default function PrivateClassRegistration() {
       {/* Form */}
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
-          {/* Logo */}
-          <div className="text-center mb-6">
-            <Image 
-              src="/images/mohar.jpg" 
-              alt="Mohar Chess Logo" 
-              width={100} 
-              height={100} 
-              className="rounded-full shadow-lg mx-auto"
-            />
-          </div>
           <h1 className="text-3xl font-bold text-center mb-8 border-b-2 border-gray-200 pb-4">
             Private Class Registration Form
           </h1>

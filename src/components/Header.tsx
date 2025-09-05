@@ -30,15 +30,8 @@ const Header = () => {
               </Link>
             </div>
 
-            {/* Right Side - Enroll Button and Social Icons */}
+            {/* Right Side - Social Icons */}
             <div className="flex items-center space-x-4">
-              {/* Enroll Button */}
-              <Link
-                href="/forms-and-links"
-                className="bg-teal-800 hover:bg-teal-900 text-white px-6 py-2 rounded font-semibold transition-colors text-sm"
-              >
-                ENROLL
-              </Link>
 
               {/* Social Media Icons */}
               <div className="flex items-center space-x-2">
@@ -65,11 +58,11 @@ const Header = () => {
             <div className="flex-shrink-0">
               <Link href="/">
                 <Image
-                  src="/images/chesskids130h.png"
+                  src="/images/mohar.jpg"
                   alt="MoharChess"
-                  width={150}
-                  height={100}
-                  className="h-20 w-auto"
+                  width={280}
+                  height={80}
+                  className="h-20 w-64 rounded-lg shadow-lg"
                 />
               </Link>
             </div>
@@ -90,9 +83,6 @@ const Header = () => {
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
                   <Link href="/about-us" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg">
                     About Us
-                  </Link>
-                  <Link href="/instructors" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-b-lg">
-                    Instructors
                   </Link>
                 </div>
               </div>
@@ -184,9 +174,6 @@ const Header = () => {
               </div>
               <Link href="/online-chess-school" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Online Chess School
-              </Link>
-              <Link href="/forms-and-links" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
-                Enroll
               </Link>
               <Link href="/our-gallery" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Our Gallery

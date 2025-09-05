@@ -12,11 +12,11 @@ const Footer = () => {
           <div className="space-y-4">
             <Link href="/">
               <Image
-                src="/images/chesskids130h.png"
+                src="/images/mohar.jpg"
                 alt="MoharChess"
-                width={179}
-                height={130}
-                className="h-20 w-auto"
+                width={280}
+                height={80}
+                className="h-20 w-64 rounded-lg shadow-lg"
               />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -46,11 +46,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/instructors" className="text-gray-300 hover:text-white transition-colors">
-                  Instructors
-                </Link>
-              </li>
-              <li>
                 <Link href="/achievements" className="text-gray-300 hover:text-white transition-colors">
                   Achievements
                 </Link>
@@ -68,42 +63,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Programs */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-orange-400">Programs</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/online-chess-school" className="text-gray-300 hover:text-white transition-colors">
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link href="/private-class" className="text-gray-300 hover:text-white transition-colors">
-                  Private Classes
-                </Link>
-              </li>
-              <li>
-                <Link href="/group-class" className="text-gray-300 hover:text-white transition-colors">
-                  Group Classes
-                </Link>
-              </li>
-              <li>
-                <Link href="/chess-classes-for-seniors" className="text-gray-300 hover:text-white transition-colors">
-                  Chess Classes for Seniors
-                </Link>
-              </li>
-              <li>
-                <Link href="/events" className="text-gray-300 hover:text-white transition-colors">
-                  Events & Tournaments
-                </Link>
-              </li>
-              <li>
-                <Link href="/forms-and-links" className="text-gray-300 hover:text-white transition-colors">
-                  Enroll Now
-                </Link>
-              </li>
-            </ul>
-          </div>
 
           {/* Contact Info */}
           <div className="space-y-4">

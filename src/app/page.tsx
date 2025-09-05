@@ -10,16 +10,6 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 fade-in">
-              {/* Logo */}
-              <div className="flex justify-center mb-6">
-                <Image 
-                  src="/images/mohar.jpg" 
-                  alt="Mohar Chess Logo" 
-                  width={100} 
-                  height={100} 
-                  className="rounded-full shadow-lg"
-                />
-              </div>
               <h1 className="text-4xl lg:text-6xl font-bold font-playfair">
                 Become a Chess Pro with{" "}
                 <span className="text-orange-400">MoharChess!</span>
@@ -27,13 +17,7 @@ export default function Home() {
               <p className="text-xl text-gray-200 leading-relaxed">
                 Experience individualized chess training that develops discipline, analytical skills, and confidence for all ages.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/forms-and-links"
-                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-center"
-                >
-                  ENROLL NOW
-                </Link>
+              <div className="flex justify-center">
                 <Link
                   href="/about-us"
                   className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-center"
@@ -158,13 +142,7 @@ export default function Home() {
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Join students who have improved their chess skills and critical thinking abilities with MoharChess&apos;s individualized training approach.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/forms-and-links"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
-            >
-              ENROLL TODAY
-            </Link>
+          <div className="flex justify-center">
             <Link
               href="/contact-us"
               className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"

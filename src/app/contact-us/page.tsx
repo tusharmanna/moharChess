@@ -192,16 +192,6 @@ export default function ContactUs() {
       <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
               Contact <span className="text-orange-400">Us</span>
             </h1>
@@ -320,18 +310,29 @@ export default function ContactUs() {
               Find Us
             </h2>
             <p className="text-lg text-gray-600">
-              Visit our location in Hoover, Alabama
+              Visit our location in Johns Creek, Georgia
             </p>
           </div>
           
           <div className="bg-white rounded-lg shadow-lg p-4">
-            <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <FaMapMarkerAlt className="text-4xl mb-4 mx-auto" />
-                <p className="text-lg font-medium">Interactive Map</p>
-                <p className="text-sm">Georgia, USA</p>
-                <p className="text-sm">Serving students nationwide</p>
-              </div>
+            <div className="h-96 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52973.92796623283!2d-84.25891772167969!3d34.02920700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a4b8b1f5b1b5%3A0x8b5b8b8b8b8b8b8b!2sJohns%20Creek%2C%20GA!5e0!3m2!1sen!2sus!4v1641234567890!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mohar Chess Location - Johns Creek, Georgia"
+              ></iframe>
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-gray-600">
+                <strong>Mohar Chess</strong><br />
+                Johns Creek, Georgia<br />
+                Serving students nationwide through online classes
+              </p>
             </div>
           </div>
         </div>
@@ -346,12 +347,6 @@ export default function ContactUs() {
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Don&apos;t wait! Join MoharChess today and start your chess journey with individualized training.
           </p>
-          <Link 
-            href="/forms-and-links" 
-            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 inline-block"
-          >
-            ENROLL NOW
-          </Link>
         </div>
       </section>
     </div>

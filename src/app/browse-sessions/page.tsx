@@ -5,23 +5,13 @@ export default function BrowseSessions() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white text-gray-800 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            {/* Logo */}
-            <div className="mb-8 flex justify-center">
-              <Image 
-                src="/images/mohar.jpg" 
-                alt="Mohar Chess Logo" 
-                width={120} 
-                height={120} 
-                className="rounded-full shadow-lg"
-              />
-            </div>
             <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-6">
               Browse Sessions
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto text-gray-600">
               Explore our available chess sessions and find the perfect fit for you
             </p>
           </div>
@@ -29,7 +19,7 @@ export default function BrowseSessions() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
