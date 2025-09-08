@@ -28,7 +28,7 @@ export default function Home() {
             </div>
             <div className="relative slide-in-right">
               <Image
-                src="/images/chess-hero.jpg"
+                src="/images/section-bg-2.jpg"
                 alt="Chess pieces on wooden board"
                 width={600}
                 height={400}
