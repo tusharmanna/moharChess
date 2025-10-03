@@ -1,0 +1,15 @@
+# robots.txt for MoharChess
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://moharchess.com/sitemap.xml
+
+# Disallow crawling of admin/private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Crawl delay (optional - uncomment if needed)
+# Crawl-delay: 1

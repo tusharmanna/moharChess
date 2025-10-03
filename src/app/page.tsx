@@ -3,8 +3,73 @@ import Link from "next/link";
 import { FaChess, FaTrophy, FaUsers, FaGraduationCap } from "react-icons/fa";
 
 export default function Home() {
+  // Schema.org structured data for local business
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "MoharChess",
+    "alternateName": "Mohar Chess School",
+    "description": "Professional chess education for all ages with individualized training. Offering online classes, private lessons, group classes, tournaments, and summer camps.",
+    "url": "https://moharchess.com",
+    "logo": "https://moharchess.com/images/mohar.jpg",
+    "image": "https://moharchess.com/images/chess-hero.jpg",
+    "telephone": "+1-770-815-8221",
+    "email": "mohar.chess@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Johns Creek",
+      "addressRegion": "GA",
+      "addressCountry": "US"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Mohua Maity",
+      "jobTitle": "Founder & CEO",
+      "description": "Vice President of Georgia Chess Association, certified Tournament Director with over 12 years of chess teaching experience"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Private Chess Lessons",
+          "description": "One-on-one chess instruction tailored to individual learning style",
+          "provider": {
+            "@type": "Organization",
+            "name": "MoharChess"
+          }
+        },
+        "price": "60",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "Group Chess Classes",
+          "description": "Interactive group chess sessions for all skill levels",
+          "provider": {
+            "@type": "Organization",
+            "name": "MoharChess"
+          }
+        },
+        "price": "35",
+        "priceCurrency": "USD"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/moharchess",
+      "https://www.instagram.com/moharchess_official"
+    ]
+  };
+
   return (
     <div className="min-h-screen">
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
         <div className="container mx-auto px-4">
