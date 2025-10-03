@@ -1,5 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { generateMetadata as generateMeta } from "@/lib/metadata";
+
+export const metadata = generateMeta({
+  title: "About Us - Unlocking Potential Through Chess Education",
+  description: "Meet Mohua Maity, Founder & CEO of MoharChess. Over 12 years of chess teaching experience, Vice President of Georgia Chess Association, and certified Tournament Director.",
+  keywords: "mohua maity, moharchess founder, georgia chess association, chess instructor, certified tournament director, chess education",
+  ogImage: "/images/Mohua.jpg"
+});
 
 export default function AboutUs() {
   return (

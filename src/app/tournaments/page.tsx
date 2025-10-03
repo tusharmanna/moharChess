@@ -1,5 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import { generateMetadata as generateMeta } from "@/lib/metadata";
+
+export const metadata = generateMeta({
+  title: "Chess Tournaments - USCF Rated Scholastic Competitions",
+  description: "Join our USCF-rated scholastic chess tournaments. 4-round Swiss system with sections for all skill levels. Located in Roswell, GA. Tournament preparation and competitive chess.",
+  keywords: "uscf tournament, chess tournament, scholastic chess, rated chess tournament, georgia chess tournament, youth chess competition",
+  ogImage: "/images/rated-banner.jpg"
+});
 
 export default function Tournaments() {
   return (
