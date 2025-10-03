@@ -4,13 +4,13 @@
 export interface ErrorInfo {
   message: string;
   stack?: string;
-  componentStack?: string;
+  componentStack?: string | null;
   url?: string;
   userAgent?: string;
   timestamp: string;
 }
 
-export function logError(error: Error, errorInfo?: { componentStack?: string }) {
+export function logError(error: Error, errorInfo?: { componentStack?: string | null }) {
   const errorData: ErrorInfo = {
     message: error.message,
     stack: error.stack,
@@ -39,7 +39,7 @@ export function logError(error: Error, errorInfo?: { componentStack?: string }) 
         errors.shift();
       }
       sessionStorage.setItem('app_errors', JSON.stringify(errors));
-    } catch (e) {
+    } catch {
       // Fail silently if sessionStorage is not available
     }
   }
