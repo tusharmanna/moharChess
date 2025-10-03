@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneVolume, FaWhatsapp } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 import Toast, { ToastType } from '@/components/Toast';
+import { env, isEmailJSConfigured } from '@/lib/env';
 
 // Note: Metadata export moved to layout or use next/head for client components
 
@@ -36,18 +37,13 @@ function ContactForm() {
     setToast(null);
 
     try {
-      // Replace with your EmailJS credentials
-      // For now, fallback to mailto if EmailJS is not configured
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-
-      if (serviceId && templateId && publicKey && formRef.current) {
+      // Check if EmailJS is configured
+      if (isEmailJSConfigured() && formRef.current) {
         await emailjs.sendForm(
-          serviceId,
-          templateId,
+          env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
           formRef.current,
-          publicKey
+          env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
         );
 
         setToast({

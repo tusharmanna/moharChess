@@ -3,6 +3,7 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 import Link from 'next/link';
 import { FaExclamationTriangle, FaHome, FaRedo } from 'react-icons/fa';
+import { logError } from '@/lib/errorTracking';
 
 interface Props {
   children: ReactNode;
@@ -25,10 +26,8 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error('ErrorBoundary caught an error:', error, errorInfo);
-
-    // You can log the error to an error reporting service here
-    // Example: logErrorToService(error, errorInfo);
+    // Log error to tracking system
+    logError(error, { componentStack: errorInfo.componentStack });
   }
 
   handleReset = () => {
