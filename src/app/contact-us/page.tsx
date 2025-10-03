@@ -1,17 +1,26 @@
 'use client';
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneVolume, FaWhatsapp } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
+
+// Note: Metadata export moved to layout or use next/head for client components
 
 // Contact Form Component
 function ContactForm() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
     subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{type: 'success' | 'error' | null, message: string}>({
+    type: null,
     message: ''
   });
 
@@ -23,12 +32,44 @@ function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
 
-    // Create email content
-    const emailSubject = `Contact Form: ${formData.subject || 'General Inquiry'}`;
-    const emailBody = `
+    try {
+      // Replace with your EmailJS credentials
+      // For now, fallback to mailto if EmailJS is not configured
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      if (serviceId && templateId && publicKey && formRef.current) {
+        await emailjs.sendForm(
+          serviceId,
+          templateId,
+          formRef.current,
+          publicKey
+        );
+
+        setSubmitStatus({
+          type: 'success',
+          message: 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.'
+        });
+
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        // Fallback to mailto
+        const emailSubject = `Contact Form: ${formData.subject || 'General Inquiry'}`;
+        const emailBody = `
 Hello MoharChess Team,
 
 I am contacting you through your website contact form.
@@ -43,30 +84,39 @@ ${formData.message}
 
 Best regards,
 ${formData.firstName} ${formData.lastName}
-    `.trim();
+        `.trim();
 
-    // Create mailto link
-    const mailtoLink = `mailto:mohar.chess@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        const mailtoLink = `mailto:mohar.chess@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailtoLink;
 
-    // Open email client
-    window.location.href = mailtoLink;
-
-    // Optional: Reset form after submission
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
-
-    // Show success message
-    alert('Your email client will open with the pre-filled message. Please send the email to complete your inquiry.');
+        setSubmitStatus({
+          type: 'success',
+          message: 'Your email client will open with the pre-filled message. Please send the email to complete your inquiry.'
+        });
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Failed to send message. Please try again or contact us directly at mohar.chess@gmail.com'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+      {/* Status Messages */}
+      {submitStatus.type && (
+        <div className={`p-4 rounded-lg ${
+          submitStatus.type === 'success'
+            ? 'bg-green-50 border border-green-200 text-green-800'
+            : 'bg-red-50 border border-red-200 text-red-800'
+        }`}>
+          {submitStatus.message}
+        </div>
+      )}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
@@ -172,13 +222,18 @@ ${formData.firstName} ${formData.lastName}
 
       <button
         type="submit"
-        className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
+        disabled={isSubmitting}
+        className={`w-full font-semibold py-4 px-8 rounded-lg transition-colors duration-300 ${
+          isSubmitting
+            ? 'bg-gray-400 cursor-not-allowed'
+            : 'bg-orange-500 hover:bg-orange-600'
+        } text-white`}
       >
-        Send Message
+        {isSubmitting ? 'Sending...' : 'Send Message'}
       </button>
 
       <p className="text-sm text-gray-600 text-center">
-        Clicking &ldquo;Send Message&rdquo; will open your email client with a pre-filled message to mohar.chess@gmail.com
+        We&apos;ll respond to your inquiry within 24 hours
       </p>
     </form>
   );

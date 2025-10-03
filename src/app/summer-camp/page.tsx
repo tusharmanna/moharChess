@@ -1,5 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import { generateMetadata as generateMeta } from "@/lib/metadata";
+
+export const metadata = generateMeta({
+  title: "Summer Chess Camp - July 2025",
+  description: "Join our Summer Chess Camp in Johns Creek, GA. Ages 7-13, July 21-25, 9:30 AM - 4:30 PM. $350 entry fee includes all materials. Learn chess strategies, make friends, and have fun!",
+  keywords: "summer chess camp, kids chess camp, chess summer program, johns creek chess camp, youth chess camp atlanta",
+  ogImage: "/images/SummerCampJuly2025.jpg"
+});
 
 export default function SummerCamp() {
   return (
@@ -89,9 +97,9 @@ export default function SummerCamp() {
                       <strong>For more Information Contact:</strong>
                     </p>
                     <p className="text-white">
-                      Mohua Maity | (770) 815-8221 | 
-                      <a href="mailto:mohar@chess.org" className="text-teal-200 hover:text-white underline ml-1">
-                        mohar@chess.org
+                      Mohua Maity | (770) 815-8221 |
+                      <a href="mailto:mohar.chess@gmail.com" className="text-teal-200 hover:text-white underline ml-1">
+                        mohar.chess@gmail.com
                       </a>
                     </p>
                   </div>
