@@ -3,6 +3,7 @@ import { Inter, Playfair_Display, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Analytics from "@/components/Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 const playfair = Playfair_Display({
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${playfair.variable} ${manrope.variable} antialiased`}>
+        <Analytics />
         {/* Skip to main content link for accessibility */}
         <a
           href="#main-content"
