@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useRef } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneVolume, FaWhatsapp } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import Toast, { ToastType } from '@/components/Toast';
 
 // Note: Metadata export moved to layout or use next/head for client components
 
@@ -19,10 +20,7 @@ function ContactForm() {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<{type: 'success' | 'error' | null, message: string}>({
-    type: null,
-    message: ''
-  });
+  const [toast, setToast] = useState<{show: boolean, message: string, type: ToastType} | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -35,7 +33,7 @@ function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus({ type: null, message: '' });
+    setToast(null);
 
     try {
       // Replace with your EmailJS credentials
@@ -52,9 +50,10 @@ function ContactForm() {
           publicKey
         );
 
-        setSubmitStatus({
-          type: 'success',
-          message: 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.'
+        setToast({
+          show: true,
+          message: 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.',
+          type: 'success'
         });
 
         // Reset form
@@ -89,16 +88,18 @@ ${formData.firstName} ${formData.lastName}
         const mailtoLink = `mailto:mohar.chess@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
         window.location.href = mailtoLink;
 
-        setSubmitStatus({
-          type: 'success',
-          message: 'Your email client will open with the pre-filled message. Please send the email to complete your inquiry.'
+        setToast({
+          show: true,
+          message: 'Your email client will open with the pre-filled message. Please send the email to complete your inquiry.',
+          type: 'info'
         });
       }
     } catch (error) {
       console.error('Error sending email:', error);
-      setSubmitStatus({
-        type: 'error',
-        message: 'Failed to send message. Please try again or contact us directly at mohar.chess@gmail.com'
+      setToast({
+        show: true,
+        message: 'Failed to send message. Please try again or contact us directly at mohar.chess@gmail.com',
+        type: 'error'
       });
     } finally {
       setIsSubmitting(false);
@@ -106,17 +107,15 @@ ${formData.firstName} ${formData.lastName}
   };
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-      {/* Status Messages */}
-      {submitStatus.type && (
-        <div className={`p-4 rounded-lg ${
-          submitStatus.type === 'success'
-            ? 'bg-green-50 border border-green-200 text-green-800'
-            : 'bg-red-50 border border-red-200 text-red-800'
-        }`}>
-          {submitStatus.message}
-        </div>
+    <>
+      {toast?.show && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={() => setToast(null)}
+        />
       )}
+      <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
@@ -235,7 +234,8 @@ ${formData.firstName} ${formData.lastName}
       <p className="text-sm text-gray-600 text-center">
         We&apos;ll respond to your inquiry within 24 hours
       </p>
-    </form>
+      </form>
+    </>
   );
 }
 

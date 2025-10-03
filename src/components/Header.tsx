@@ -1,16 +1,63 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaEnvelope, FaPhoneVolume, FaWhatsapp, FaFacebookF, FaInstagram, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Close mobile menu on Escape key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isMenuOpen) {
+        setIsMenuOpen(false);
+        toggleButtonRef.current?.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isMenuOpen]);
+
+  // Trap focus in mobile menu when open
+  useEffect(() => {
+    if (!isMenuOpen || !mobileMenuRef.current) return;
+
+    const focusableElements = mobileMenuRef.current.querySelectorAll(
+      'a[href], button:not([disabled])'
+    );
+    const firstElement = focusableElements[0] as HTMLElement;
+    const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+    const handleTabKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        }
+      } else {
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleTabKey);
+    firstElement?.focus();
+
+    return () => document.removeEventListener('keydown', handleTabKey);
+  }, [isMenuOpen]);
 
   return (
     <header className="bg-white shadow-lg">
@@ -125,9 +172,12 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <button
+              ref={toggleButtonRef}
               onClick={toggleMenu}
               className="lg:hidden text-gray-700 p-2"
-              aria-label="Toggle menu"
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
@@ -137,7 +187,13 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200">
+        <div
+          ref={mobileMenuRef}
+          id="mobile-menu"
+          className="lg:hidden bg-white border-t border-gray-200"
+          role="navigation"
+          aria-label="Mobile navigation"
+        >
           <div className="container mx-auto px-4 py-4">
             <div className="flex flex-col space-y-4">
               <Link href="/" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
