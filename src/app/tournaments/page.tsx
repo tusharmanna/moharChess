@@ -33,21 +33,19 @@ export default function Tournaments() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               {/* Registration Form */}
-              <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="bg-gray-50 p-4 md:p-6 rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
                   Tournament Registration
                 </h2>
-                <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSdkmIA44aq9HQY5dMe39AMBEooRHzKK1oGbWKAH6yLmOn3YjA/viewform?embedded=true" 
-                  width="100%" 
-                  height="1800" 
-                  frameBorder="0" 
-                  marginHeight={0} 
-                  marginWidth={0}
-                  title="Tournament Registration Form"
-                >
-                  Loading…
-                </iframe>
+                <div className="relative w-full overflow-hidden rounded-lg" style={{paddingBottom: '120%'}}>
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdkmIA44aq9HQY5dMe39AMBEooRHzKK1oGbWKAH6yLmOn3YjA/viewform?embedded=true"
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                    title="Tournament Registration Form"
+                  >
+                    Loading…
+                  </iframe>
+                </div>
               </div>
 
               {/* Tournament Details */}

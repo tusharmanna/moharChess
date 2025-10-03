@@ -1,5 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaExternalLinkAlt, FaPlay, FaImages, FaVideo, FaTrophy, FaUsers } from "react-icons/fa";
+import { generateMetadata as generateMeta } from "@/lib/metadata";
+
+export const metadata = generateMeta({
+  title: "Photo & Video Gallery - Chess Classes and Events",
+  description: "Browse our gallery of chess classes, tournaments, workshops, and special events at MoharChess. See students learning, competing, and enjoying chess in action.",
+  keywords: "chess gallery, chess photos, chess tournament photos, chess class images, student chess activities"
+});
 
 export default function OurGallery() {
   return (
@@ -99,127 +107,180 @@ export default function OurGallery() {
             </div>
           </div>
 
-          {/* Sample Gallery Preview */}
+          {/* Gallery Highlights with Real Images */}
           <div className="mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-teal-800 font-playfair text-center mb-12">
               Gallery Highlights
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Placeholder Images */}
-              <div className="relative group cursor-pointer">
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <FaImages className="text-4xl mx-auto mb-2" />
-                    <p className="text-sm">Chess Class Session</p>
+              {/* Summer Camp 2025 */}
+              <Link
+                href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src="/images/SummerCampJuly2025.jpg"
+                    alt="Summer Chess Camp July 2025"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-semibold text-lg">Summer Camp 2025</p>
+                    <p className="text-gray-200 text-sm">Chess learning and fun</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <Link 
-                    href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
-                    target="_blank"
-                    className="text-white text-lg font-semibold flex items-center space-x-2"
-                  >
+                <div className="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white font-semibold">
                     <FaExternalLinkAlt />
                     <span>View in Gallery</span>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="relative group cursor-pointer">
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <FaTrophy className="text-4xl mx-auto mb-2" />
-                    <p className="text-sm">Tournament Winners</p>
+              {/* Tournament Banner */}
+              <Link
+                href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src="/images/rated-banner.jpg"
+                    alt="USCF Rated Chess Tournament"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-semibold text-lg">Tournament Events</p>
+                    <p className="text-gray-200 text-sm">USCF-rated competitions</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <Link 
-                    href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
-                    target="_blank"
-                    className="text-white text-lg font-semibold flex items-center space-x-2"
-                  >
+                <div className="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white font-semibold">
                     <FaExternalLinkAlt />
                     <span>View in Gallery</span>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="relative group cursor-pointer">
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <FaPlay className="text-4xl mx-auto mb-2" />
-                    <p className="text-sm">Chess Tutorial Videos</p>
+              {/* Workshop */}
+              <Link
+                href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src="/images/20250518-chess-workshop-senior.jpg"
+                    alt="Chess Workshop for Seniors"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-semibold text-lg">Workshops & Classes</p>
+                    <p className="text-gray-200 text-sm">Special chess workshops</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <Link 
-                    href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
-                    target="_blank"
-                    className="text-white text-lg font-semibold flex items-center space-x-2"
-                  >
+                <div className="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white font-semibold">
                     <FaExternalLinkAlt />
                     <span>View in Gallery</span>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="relative group cursor-pointer">
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <FaUsers className="text-4xl mx-auto mb-2" />
-                    <p className="text-sm">Group Activities</p>
+              {/* Chess Board */}
+              <Link
+                href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src="/images/section-bg-2.jpg"
+                    alt="Chess pieces on board"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-semibold text-lg">Game Sessions</p>
+                    <p className="text-gray-200 text-sm">Practice and strategy</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <Link 
-                    href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
-                    target="_blank"
-                    className="text-white text-lg font-semibold flex items-center space-x-2"
-                  >
+                <div className="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white font-semibold">
                     <FaExternalLinkAlt />
                     <span>View in Gallery</span>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="relative group cursor-pointer">
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <FaImages className="text-4xl mx-auto mb-2" />
-                    <p className="text-sm">Special Events</p>
+              {/* Mindfulness Workshop */}
+              <Link
+                href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src="/images/mindfulness-chess-workshop.jpg"
+                    alt="Mindfulness Chess Workshop"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-semibold text-lg">Special Events</p>
+                    <p className="text-gray-200 text-sm">Mindfulness & Chess</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <Link 
-                    href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
-                    target="_blank"
-                    className="text-white text-lg font-semibold flex items-center space-x-2"
-                  >
+                <div className="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white font-semibold">
                     <FaExternalLinkAlt />
                     <span>View in Gallery</span>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="relative group cursor-pointer">
-                <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <FaVideo className="text-4xl mx-auto mb-2" />
-                    <p className="text-sm">Behind the Scenes</p>
+              {/* Chess Hero */}
+              <Link
+                href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src="/images/chess-hero.jpg"
+                    alt="Chess education and training"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-semibold text-lg">Training Sessions</p>
+                    <p className="text-gray-200 text-sm">Expert instruction</p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <Link 
-                    href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
-                    target="_blank"
-                    className="text-white text-lg font-semibold flex items-center space-x-2"
-                  >
+                <div className="absolute inset-0 bg-orange-500 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center space-x-2 text-white font-semibold">
                     <FaExternalLinkAlt />
                     <span>View in Gallery</span>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
 
