@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaExternalLinkAlt, FaPlay, FaImages, FaVideo, FaTrophy, FaUsers } from "react-icons/fa";
+import { FaExternalLinkAlt, FaImages, FaVideo, FaTrophy, FaUsers } from "react-icons/fa";
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({

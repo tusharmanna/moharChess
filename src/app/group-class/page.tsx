@@ -56,7 +56,7 @@ export default function GroupClass() {
                 <FaHandsHelping className="text-orange-500 text-2xl" />
               </div>
               <h3 className="text-xl font-semibold text-teal-800 mb-2">Peer Learning</h3>
-              <p className="text-gray-600">Learn from classmates' questions and different perspectives on chess</p>
+              <p className="text-gray-600">Learn from classmates&apos; questions and different perspectives on chess</p>
             </div>
 
             <div className="text-center p-6 bg-gray-50 rounded-lg hover:shadow-xl transition-shadow duration-300">
@@ -64,7 +64,7 @@ export default function GroupClass() {
                 <FaTrophy className="text-orange-500 text-2xl" />
               </div>
               <h3 className="text-xl font-semibold text-teal-800 mb-2">Friendly Competition</h3>
-              <p className="text-gray-600">Practice games with peers to apply what you've learned</p>
+              <p className="text-gray-600">Practice games with peers to apply what you&apos;ve learned</p>
             </div>
 
             <div className="text-center p-6 bg-gray-50 rounded-lg hover:shadow-xl transition-shadow duration-300">

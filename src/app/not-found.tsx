@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import { FaChess, FaHome, FaArrowLeft } from "react-icons/fa";
 
