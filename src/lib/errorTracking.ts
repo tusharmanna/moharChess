@@ -39,7 +39,7 @@ export function logError(error: Error, errorInfo?: { componentStack?: string }) 
         errors.shift();
       }
       sessionStorage.setItem('app_errors', JSON.stringify(errors));
-    } catch (e) {
+    } catch {
       // Fail silently if sessionStorage is not available
     }
   }

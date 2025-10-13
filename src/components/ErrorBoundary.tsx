@@ -27,7 +27,7 @@ class ErrorBoundary extends Component<Props, State> {
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     // Log error to tracking system
-    logError(error, { componentStack: errorInfo.componentStack });
+    logError(error, { componentStack: errorInfo.componentStack ?? undefined });
   }
 
   handleReset = () => {
