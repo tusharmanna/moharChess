@@ -7,6 +7,7 @@ import { FaEnvelope, FaPhoneVolume, FaWhatsapp, FaFacebookF, FaInstagram, FaBars
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isTournamentsOpen, setIsTournamentsOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -122,30 +123,30 @@ const Header = () => {
               >
                 Home
               </Link>
+              <Link href="/about-us" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
+                About Us
+              </Link>
               <div className="relative group">
                 <button className="flex items-center space-x-1 text-gray-700 hover:text-teal-800 transition-colors font-medium">
-                  <span>About Us</span>
+                  <span>Tournaments</span>
                   <FaChevronDown size={12} />
                 </button>
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
-                  <Link href="/about-us" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg">
-                    About Us
+                  <Link href="/tournaments/february" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg">
+                    February
+                  </Link>
+                  <Link href="/tournaments/march" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-b-lg">
+                    March
                   </Link>
                 </div>
               </div>
-              <Link href="/events" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
-                Upcoming Events
-              </Link>
               <div className="relative group">
                 <button className="flex items-center space-x-1 text-gray-700 hover:text-teal-800 transition-colors font-medium">
                   <span>Our Programs</span>
                   <FaChevronDown size={12} />
                 </button>
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
-                  <Link href="/tournaments" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">
-                    TOURNAMENTS
-                  </Link>
-                  <Link href="/summer-camp" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">
+                  <Link href="/summer-camp" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100 rounded-t-lg">
                     SUMMER CAMP
                   </Link>
                   <Link href="/workshops" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">
@@ -205,16 +206,29 @@ const Header = () => {
               <Link href="/instructors" className="text-gray-600 hover:text-teal-800 transition-colors font-medium pl-4 text-sm">
                 Instructors
               </Link>
-              <Link href="/events" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
-                Upcoming Events
-              </Link>
+              <div>
+                <button
+                  onClick={() => setIsTournamentsOpen(!isTournamentsOpen)}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-teal-800 transition-colors font-medium"
+                >
+                  <span>Tournaments</span>
+                  <FaChevronDown size={10} className={`transition-transform ${isTournamentsOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isTournamentsOpen && (
+                  <div className="pl-4 mt-2 space-y-2">
+                    <Link href="/tournaments/february" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
+                      February
+                    </Link>
+                    <Link href="/tournaments/march" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
+                      March
+                    </Link>
+                  </div>
+                )}
+              </div>
               <div className="text-gray-700 font-medium">
                 Our Programs
               </div>
               <div className="pl-4 space-y-2">
-                <Link href="/tournaments" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
-                  TOURNAMENTS
-                </Link>
                 <Link href="/summer-camp" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
                   SUMMER CAMP
                 </Link>
