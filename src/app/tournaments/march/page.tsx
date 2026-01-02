@@ -39,7 +39,7 @@ export default function MarchTournaments() {
                 </h2>
                 <div className="relative w-full overflow-hidden rounded-lg" style={{paddingBottom: '120%'}}>
                   <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdkmIA44aq9HQY5dMe39AMBEooRHzKK1oGbWKAH6yLmOn3YjA/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfnirg_HMmx-w13yUzB_3lQJFV4aySLY1o1KJ6KdRYcpoVR4A/viewform?embedded=true"
                     className="absolute top-0 left-0 w-full h-full border-0"
                     title="Tournament Registration Form"
                   >
