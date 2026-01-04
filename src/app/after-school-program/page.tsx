@@ -64,10 +64,10 @@ export default function AfterSchoolProgram() {
                       Register for Fall and Spring Semesters
                     </p>
                     <p className="text-gray-700">
-                      <strong>Fall:</strong> September to December, 2024
+                      <strong>Fall:</strong> September to December, 2025
                     </p>
                     <p className="text-gray-700">
-                      <strong>Spring:</strong> January to May, 2025
+                      <strong>Spring:</strong> January to May, 2026
                     </p>
                     <p className="text-gray-700">
                       <strong>Time:</strong> Every Friday 03:00 to 04:00 PM
