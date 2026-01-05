@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaEnvelope, FaPhoneVolume, FaWhatsapp, FaFacebookF, FaInstagram, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneVolume, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -91,6 +91,9 @@ const Header = () => {
                 </Link>
                 <Link href="https://www.instagram.com/moharchess_official?igsh=cjVuYTN3NnpjZ3l3" target="_blank" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded transition-colors">
                   <FaInstagram size={16} className="text-white" />
+                </Link>
+                <Link href="https://www.youtube.com/@MoharChess" target="_blank" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded transition-colors">
+                  <FaYoutube size={16} className="text-white" />
                 </Link>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaEnvelope, FaPhoneVolume, FaMapMarkerAlt, FaWhatsapp, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneVolume, FaMapMarkerAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -32,6 +32,9 @@ const Footer = () => {
               </Link>
               <Link href="https://www.instagram.com/moharchess_official?igsh=cjVuYTN3NnpjZ3l3" target="_blank" className="text-white hover:text-orange-400 transition-colors">
                 <FaInstagram size={24} />
+              </Link>
+              <Link href="https://www.youtube.com/@MoharChess" target="_blank" className="text-white hover:text-orange-400 transition-colors">
+                <FaYoutube size={24} />
               </Link>
             </div>
           </div>
