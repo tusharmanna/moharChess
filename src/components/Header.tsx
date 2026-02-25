@@ -135,10 +135,7 @@ const Header = () => {
                   <FaChevronDown size={12} />
                 </button>
                 <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
-                  <Link href="/tournaments/february" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg">
-                    February
-                  </Link>
-                  <Link href="/tournaments/march" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-b-lg">
+                  <Link href="/tournaments/march" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg">
                     March
                   </Link>
                 </div>
@@ -219,9 +216,6 @@ const Header = () => {
                 </button>
                 {isTournamentsOpen && (
                   <div className="pl-4 mt-2 space-y-2">
-                    <Link href="/tournaments/february" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
-                      February
-                    </Link>
                     <Link href="/tournaments/march" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
                       March
                     </Link>
