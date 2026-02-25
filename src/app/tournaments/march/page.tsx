@@ -119,9 +119,9 @@ export default function MarchTournaments() {
                     Tournament Location
                   </h3>
                   <div className="text-gray-700">
-                    <p className="font-semibold">Holiday Inn</p>
-                    <p>909 Holcomb Bridge Rd</p>
-                    <p>Roswell, GA 30076</p>
+                    <p className="font-semibold">The Best Western Plus Roswell/Alpharetta</p>
+                    <p>907 Holcomb Bridge Road</p>
+                    <p>Roswell, GA</p>
                   </div>
                 </div>
 
