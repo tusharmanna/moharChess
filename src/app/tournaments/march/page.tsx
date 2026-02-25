@@ -87,7 +87,7 @@ export default function MarchTournaments() {
                   
                   <div className="space-y-3">
                     <p className="text-gray-700">
-                      <strong>Sections:</strong> Unrated, U/400, U/800, U/1200, Open.
+                      <strong>Sections:</strong> Unrated, U/400, U/800, U/1200.
                     </p>
                     <p className="text-gray-700">
                       <strong>Rounds:</strong> 10:00 am; 11:30 am; 1:00 pm; 2:30 pm or as soon as possible
