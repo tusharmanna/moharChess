@@ -68,7 +68,7 @@ export default function MarchTournaments() {
                   </h3>
                   <div className="space-y-3 text-gray-700">
                     <p>
-                      <strong>Date:</strong> Mar 29, 2026 (Sunday)
+                      <strong>Date:</strong> Mar 14, 2026 (Saturday)
                     </p>
                     <p>
                       <strong>Time:</strong> 09:30 am to 04:30 pm
