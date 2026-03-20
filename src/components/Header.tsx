@@ -68,9 +68,9 @@ const Header = () => {
           <div className="flex justify-between items-center py-3">
             {/* Contact Info */}
             <div className="flex items-center space-x-6">
-              <Link href="mailto:mohar.chess@gmail.com" className="flex items-center space-x-2 hover:text-gray-200 transition-colors text-sm">
+              <Link href="mailto:chess@mohar.org" className="flex items-center space-x-2 hover:text-gray-200 transition-colors text-sm">
                 <FaEnvelope size={14} />
-                <span>mohar.chess@gmail.com</span>
+                <span>chess@mohar.org</span>
               </Link>
               <Link href="tel:7708158221" className="flex items-center space-x-2 hover:text-gray-200 transition-colors text-sm">
                 <FaPhoneVolume size={14} />

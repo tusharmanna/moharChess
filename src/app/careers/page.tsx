@@ -243,10 +243,10 @@ export default function Careers() {
                     <div className="flex items-center space-x-3">
                       <FaEnvelope className="text-orange-500" />
                       <Link 
-                        href="mailto:mohar.chess@gmail.com?subject=Chess Coach Position Inquiry" 
+                        href="mailto:chess@mohar.org?subject=Chess Coach Position Inquiry" 
                         className="text-gray-600 hover:text-orange-500 transition-colors"
                       >
-                        mohar.chess@gmail.com
+                        chess@mohar.org
                       </Link>
                     </div>
                     <p className="text-gray-600 text-sm">
@@ -259,7 +259,7 @@ export default function Careers() {
                 <div className="space-y-4">
                   <h4 className="text-lg font-semibold text-teal-800">Quick Apply</h4>
                   <Link 
-                    href="mailto:mohar.chess@gmail.com?subject=Chess Coach Application&body=Hello MoharChess Team,%0D%0A%0D%0AI am interested in the Chess Coach position. Here are my details:%0D%0A%0D%0AName: %0D%0AExperience with children: %0D%0AAvailability: %0D%0AChess experience: %0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards," 
+                    href="mailto:chess@mohar.org?subject=Chess Coach Application&body=Hello MoharChess Team,%0D%0A%0D%0AI am interested in the Chess Coach position. Here are my details:%0D%0A%0D%0AName: %0D%0AExperience with children: %0D%0AAvailability: %0D%0AChess experience: %0D%0A%0D%0AThank you for your consideration.%0D%0A%0D%0ABest regards," 
                     className="block w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 text-center"
                   >
                     Send Application Email
@@ -284,7 +284,7 @@ export default function Careers() {
             Join MoharChess and help shape the next generation of chess players while building your own teaching career.
           </p>
           <Link 
-            href="mailto:mohar.chess@gmail.com?subject=Chess Coach Position Inquiry" 
+            href="mailto:chess@mohar.org?subject=Chess Coach Position Inquiry" 
             className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 inline-block"
           >
             Contact Us Today

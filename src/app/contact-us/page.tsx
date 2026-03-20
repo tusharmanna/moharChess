@@ -81,7 +81,7 @@ Best regards,
 ${formData.firstName} ${formData.lastName}
         `.trim();
 
-        const mailtoLink = `mailto:mohar.chess@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        const mailtoLink = `mailto:chess@mohar.org?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
         window.location.href = mailtoLink;
 
         setToast({
@@ -94,7 +94,7 @@ ${formData.firstName} ${formData.lastName}
       console.error('Error sending email:', error);
       setToast({
         show: true,
-        message: 'Failed to send message. Please try again or contact us directly at mohar.chess@gmail.com',
+        message: 'Failed to send message. Please try again or contact us directly at chess@mohar.org',
         type: 'error'
       });
     } finally {
@@ -290,10 +290,10 @@ export default function ContactUs() {
                   <div>
                     <h3 className="text-lg font-semibold text-teal-800 mb-2">Email</h3>
                     <Link
-                      href="mailto:mohar.chess@gmail.com"
+                      href="mailto:chess@mohar.org"
                       className="text-gray-600 hover:text-orange-500 transition-colors"
                     >
-                      mohar.chess@gmail.com
+                      chess@mohar.org
                     </Link>
                   </div>
                 </div>

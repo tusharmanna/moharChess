@@ -35,7 +35,7 @@ export default function Enroll() {
             <div>
               <h4 className="font-semibold text-teal-800 mb-2">Registration:</h4>
               <Link 
-                href="mailto:mohar.chess@gmail.com?subject=Alabama State Chess Championship Registration"
+                href="mailto:chess@mohar.org?subject=Alabama State Chess Championship Registration"
                 className="inline-flex items-center space-x-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded text-sm transition-colors"
               >
                 <FaEnvelope />
@@ -86,7 +86,7 @@ export default function Enroll() {
             <div>
               <h4 className="font-semibold text-teal-800 mb-2">Join a Group:</h4>
               <Link
-                href="mailto:mohar.chess@gmail.com?subject=Group Chess Classes Inquiry"
+                href="mailto:chess@mohar.org?subject=Group Chess Classes Inquiry"
                 className="inline-flex items-center space-x-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded text-sm transition-colors"
               >
                 <FaEnvelope />
@@ -116,7 +116,7 @@ export default function Enroll() {
             <div>
               <h4 className="font-semibold text-teal-800 mb-2">Register:</h4>
               <Link
-                href="mailto:mohar.chess@gmail.com?subject=Chess Camp Registration"
+                href="mailto:chess@mohar.org?subject=Chess Camp Registration"
                 className="inline-flex items-center space-x-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded text-sm transition-colors"
               >
                 <FaEnvelope />
@@ -146,7 +146,7 @@ export default function Enroll() {
             <div>
               <h4 className="font-semibold text-teal-800 mb-2">Learn More:</h4>
               <Link
-                href="mailto:mohar.chess@gmail.com?subject=Senior Chess Classes Inquiry"
+                href="mailto:chess@mohar.org?subject=Senior Chess Classes Inquiry"
                 className="inline-flex items-center space-x-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded text-sm transition-colors"
               >
                 <FaEnvelope />
@@ -270,7 +270,7 @@ export default function Enroll() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href="mailto:mohar.chess@gmail.com?subject=Chess Program Inquiry" 
+              href="mailto:chess@mohar.org?subject=Chess Program Inquiry" 
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
             >
               Contact Us Today

@@ -14,7 +14,7 @@ export default function Home() {
     "logo": "https://moharchess.com/images/mohar.jpg",
     "image": "https://moharchess.com/images/chess-hero.jpg",
     "telephone": "+1-770-815-8221",
-    "email": "mohar.chess@gmail.com",
+    "email": "chess@mohar.org",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Johns Creek",

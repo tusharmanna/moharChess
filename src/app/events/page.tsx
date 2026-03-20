@@ -164,8 +164,8 @@ export default function UpcomingEvents() {
                       </div>
                       <div className="flex items-center space-x-3">
                         <FaEnvelope className="text-orange-500" />
-                        <Link href="mailto:mohar.chess@gmail.com" className="text-gray-600 hover:text-orange-500 transition-colors">
-                          mohar.chess@gmail.com
+                        <Link href="mailto:chess@mohar.org" className="text-gray-600 hover:text-orange-500 transition-colors">
+                          chess@mohar.org
                         </Link>
                       </div>
                     </div>

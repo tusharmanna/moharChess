@@ -96,8 +96,8 @@ export default function SummerCamp() {
                     </p>
                     <p className="text-white">
                       Mohua Maity | (770) 815-8221 |
-                      <a href="mailto:mohar.chess@gmail.com" className="text-teal-200 hover:text-white underline ml-1">
-                        mohar.chess@gmail.com
+                      <a href="mailto:chess@mohar.org" className="text-teal-200 hover:text-white underline ml-1">
+                        chess@mohar.org
                       </a>
                     </p>
                   </div>

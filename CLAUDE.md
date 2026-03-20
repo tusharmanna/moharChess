@@ -18,6 +18,7 @@ MoharChess is a chess education platform website built with Next.js 15, React 19
 ## Build Configuration
 
 The project is configured for **static site generation** (SSG):
+
 - `output: 'export'` in next.config.ts
 - Builds to `out/` directory
 - Images are unoptimized for static hosting
@@ -42,10 +43,12 @@ npm run lint
 ## Deployment
 
 Static site deployment to AWS S3 is configured via deployment scripts:
+
 - `deploy-s3.sh` (Linux/Mac)
 - `deploy-s3.bat` (Windows)
 
 These scripts:
+
 1. Run `npm run build`
 2. Sync `/out` directory to S3 bucket
 3. Set proper content types for HTML/CSS/JS files
@@ -82,6 +85,7 @@ src/
 ### Layout System
 
 The application uses Next.js App Router with a consistent layout:
+
 - **Root Layout** (`src/app/layout.tsx`): Wraps all pages with Header and Footer
 - **Header** (`src/components/Header.tsx`): Client component with responsive navigation, dropdown menus, and mobile menu toggle
 - **Footer** (`src/components/Footer.tsx`): Static footer with company info, quick links, and contact details
@@ -102,6 +106,7 @@ The application uses Next.js App Router with a consistent layout:
 ### Page Architecture
 
 All pages follow a consistent pattern:
+
 1. Full-width sections with gradient or solid backgrounds
 2. Container-based content (responsive max-width)
 3. Hero sections with imagery and CTAs
@@ -111,6 +116,7 @@ All pages follow a consistent pattern:
 ### Client Components
 
 Only the Header component uses `'use client'` directive for:
+
 - Mobile menu state management
 - Interactive dropdown menus
 - Responsive navigation toggle
@@ -127,7 +133,8 @@ All other components are Server Components by default.
 ## Contact Information
 
 Contact details hardcoded throughout the site:
-- Email: mohar.chess@gmail.com
+
+- Email: chess@mohar.org
 - Phone: 7708158221
 - WhatsApp: https://wa.me/17708158221
 - Facebook: https://facebook.com/moharchess
@@ -136,6 +143,7 @@ Contact details hardcoded throughout the site:
 ## Image Assets
 
 All images stored in `/public/images/`:
+
 - Logo: `mohar.jpg`
 - Hero images: `chess-hero.jpg`, `section-bg-2.jpg`
 - Program banners: `SummerCampJuly2025.jpg`, `rated-banner.jpg`, etc.

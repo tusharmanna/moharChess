@@ -67,10 +67,10 @@ export default function Error({
             If this problem persists, please contact us:
           </p>
           <a
-            href="mailto:mohar.chess@gmail.com"
+            href="mailto:chess@mohar.org"
             className="text-orange-500 hover:text-orange-600 font-semibold"
           >
-            mohar.chess@gmail.com
+            chess@mohar.org
           </a>
         </div>
       </div>

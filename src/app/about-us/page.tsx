@@ -11,24 +11,23 @@ export const metadata = generateMeta({
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-800 to-teal-900">
+    <div className="min-h-screen bg-white">
       {/* Main Content Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           {/* Header with Navigation */}
           <div className="flex justify-between items-center mb-8">
-            <div className="text-white">
+            <div className="text-gray-600">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>About Us</span>
             </div>
-            <div className="text-white text-sm">1/2</div>
+            <div className="text-gray-600 text-sm">1/2</div>
           </div>
 
           {/* Main Title */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              About Mohar Chess:<br />
+            <h1 className="text-4xl lg:text-6xl font-bold text-teal-800 mb-6 leading-tight">
               <span className="text-orange-400">&apos;Unlocking Potential Through Chess Education&apos;</span>
             </h1>
           </div>
@@ -45,26 +44,26 @@ export default function AboutUs() {
                     alt="Mohua Maity"
                     width={200}
                     height={200}
-                    className="rounded-full border-4 border-white shadow-2xl"
+                    className="rounded-full border-4 border-teal-800 shadow-2xl"
                   />
                 </div>
               </div>
-              
+
               {/* Name and Title */}
               <div className="text-center lg:text-left">
-                <h2 className="text-2xl font-bold text-white mb-2">
+                <h2 className="text-2xl font-bold text-teal-800 mb-2">
                   MOHUA MAITY
                 </h2>
                 <p className="text-lg text-orange-400 font-semibold">
                   FOUNDER & CEO, MOHAR CHESS
                 </p>
-                <p className="text-white mt-2">
+                <p className="text-gray-600 mt-2">
                   Vice President, Georgia Chess Association
                 </p>
               </div>
 
               {/* About Mohua */}
-              <div className="text-white text-sm leading-relaxed">
+              <div className="text-gray-700 text-sm leading-relaxed">
                 <p className="mb-4">
                   Mohua has been teaching chess for over 12 years and is dedicated to promoting the game across all ages. She has organized scholastic state-level team tournaments for under the Georgia Chess Association, where she currently serves as Vice President.
                 </p>
@@ -79,8 +78,8 @@ export default function AboutUs() {
 
             {/* Right Side - Who Should Join */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-white mb-4">Who Should Join:</h3>
-              <ul className="space-y-3 text-white">
+              <h3 className="text-2xl font-bold text-teal-800 mb-4">Who Should Join:</h3>
+              <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-orange-400 mr-3">•</span>
                   <span>Students seeking to develop strategic thinking and analytical skills</span>
@@ -119,23 +118,23 @@ export default function AboutUs() {
               <h3 className="text-xl font-bold">Join Our Chess Community</h3>
             </div>
             <div className="text-center mt-4">
-              <p className="text-white text-lg">Hosted By: Mohar Chess - Georgia Chess Association</p>
+              <p className="text-gray-700 text-lg">Hosted By: Mohar Chess - Georgia Chess Association</p>
             </div>
           </div>
 
           {/* Contact Information */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="text-white">
+            <div className="text-gray-700">
               <div className="text-2xl mb-2">📞</div>
               <h4 className="font-bold mb-2">PHONE</h4>
               <p>(770) 815-8221</p>
             </div>
-            <div className="text-white">
+            <div className="text-gray-700">
               <div className="text-2xl mb-2">📧</div>
               <h4 className="font-bold mb-2">EMAIL</h4>
-              <p>mohar.chess@gmail.com</p>
+              <p>chess@mohar.org</p>
             </div>
-            <div className="text-white">
+            <div className="text-gray-700">
               <div className="text-2xl mb-2">📍</div>
               <h4 className="font-bold mb-2">LOCATION</h4>
               <p>JOHNS CREEK, GEORGIA</p>

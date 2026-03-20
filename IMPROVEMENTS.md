@@ -118,7 +118,7 @@
 
 ### 2. Email Consistency Fixed
 
-- Changed `mohar@chess.org` to `mohar.chess@gmail.com` in `summer-camp/page.tsx`
+- Changed `mohar@chess.org` to `chess@mohar.org` in `summer-camp/page.tsx`
 - Ensured all contact forms and links use the correct email address
 
 ### 3. Contact Form Improved
