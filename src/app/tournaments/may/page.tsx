@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "Chess Tournaments - USCF Rated Scholastic Competitions",
-  description: "Join our USCF-rated scholastic chess tournaments. 4-round Swiss system with sections for all skill levels. Located in Roswell, GA. Tournament preparation and competitive chess.",
-  keywords: "uscf tournament, chess tournament, scholastic chess, rated chess tournament, georgia chess tournament, youth chess competition",
+  title: "May Chess Tournaments - USCF Rated Scholastic Competitions",
+  description: "Join our USCF-rated scholastic chess tournaments in May. 4-round Swiss system with sections for all skill levels. Located in Roswell, GA. Tournament preparation and competitive chess.",
+  keywords: "uscf tournament, chess tournament, scholastic chess, rated chess tournament, georgia chess tournament, youth chess competition, may tournament",
   ogImage: "/images/rated-banner.jpg"
 });
 
-export default function Tournaments() {
+export default function MayTournaments() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -18,7 +18,7 @@ export default function Tournaments() {
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Chess Tournaments
+              May Chess Tournaments
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-teal-100">
               Compete in USCF-rated tournaments and test your skills
@@ -39,7 +39,7 @@ export default function Tournaments() {
                 </h2>
                 <div className="relative w-full overflow-hidden rounded-lg" style={{paddingBottom: '120%'}}>
                   <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdkmIA44aq9HQY5dMe39AMBEooRHzKK1oGbWKAH6yLmOn3YjA/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd9VARqMMktlS1xL6JG4LDRRxZUT_z4B4zgt_bDk9DSkmP4eA/viewform?embedded=true"
                     className="absolute top-0 left-0 w-full h-full border-0"
                     title="Tournament Registration Form"
                   >
@@ -52,11 +52,11 @@ export default function Tournaments() {
               <div className="space-y-6">
                 {/* Tournament Banner */}
                 <div className="text-center">
-                  <Image 
-                    src="/images/rated-banner.jpg" 
-                    alt="Tournament Banner" 
-                    width={400} 
-                    height={300} 
+                  <Image
+                    src="/images/rated-banner.jpg"
+                    alt="Tournament Banner"
+                    width={400}
+                    height={300}
                     className="w-full rounded-lg shadow-md"
                   />
                 </div>
@@ -90,10 +90,10 @@ export default function Tournaments() {
                   <p className="text-gray-700 mb-4">
                     This is a 4-round USCF-rated Scholastic tournament, with Time Control G/25; d5.
                   </p>
-                  
+
                   <div className="space-y-3">
                     <p className="text-gray-700">
-                      <strong>Sections:</strong> Unrated, U/400, U/800, U/1200, Open.
+                      <strong>Sections:</strong> Unrated, U/400, U/800, U/1200.
                     </p>
                     <p className="text-gray-700">
                       <strong>Rounds:</strong> 10:00 am; 11:30 am; 1:00 pm; 2:30 pm or as soon as possible
@@ -111,7 +111,7 @@ export default function Tournaments() {
                       <strong>For more information, Contact:</strong>
                     </p>
                     <p className="text-white">
-                      Mohua Maity | (770) 815-8221 | 
+                      Mohua Maity | (770) 815-8221 |
                       <a href="mailto:chess@mohar.org" className="text-teal-200 hover:text-white underline ml-1">
                         chess@mohar.org
                       </a>
