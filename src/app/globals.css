@@ -60,13 +60,13 @@ h3:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-whi
 h4:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']),
 h5:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']),
 h6:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']) {
-  color: #fb923c;
+  color: #e07028;
 }
 
 /* Bold inline text also uses brand orange */
 strong,
 b {
-  color: #fb923c;
+  color: #e07028;
 }
 
 /* Animation classes */
