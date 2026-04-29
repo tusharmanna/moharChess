@@ -28,7 +28,7 @@ export default function Flyer() {
         style={{ width: "210mm", height: "297mm", fontFamily: "sans-serif", overflow: "hidden" }}
       >
         {/* Top Banner */}
-        <div className="bg-teal-800 text-white text-center py-3 px-8">
+        <div className="bg-white text-teal-800 text-center py-3 px-8 border-b-2 border-teal-800">
           <div className="flex items-center justify-center gap-3">
             <Image
               src="/images/mohar.jpg"

@@ -6,14 +6,13 @@ export default function Workshops() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-teal-800 to-teal-600 text-white">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div className="relative container mx-auto px-4 py-20">
+      <div className="bg-white">
+        <div className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-teal-800">
               Chess Workshops
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-teal-100">
+            <p className="text-xl md:text-2xl mb-8 text-gray-600">
               Specialized chess instruction for different age groups and skill levels
             </p>
           </div>
@@ -133,7 +132,7 @@ export default function Workshops() {
               </p>
               <Link 
                 href="/contact-us" 
-                className="bg-teal-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors inline-block"
+                className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
               >
                 Contact Us
               </Link>

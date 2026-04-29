@@ -12,13 +12,13 @@ export default function UpcomingEvents() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
+            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4 text-teal-800">
               Upcoming <span className="text-orange-400">Events</span>
             </h1>
-            <nav className="text-gray-200">
+            <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>Upcoming Events</span>
@@ -34,14 +34,14 @@ export default function UpcomingEvents() {
             {/* Event Card */}
             <div className="bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
               {/* Event Header */}
-              <div className="bg-gradient-to-r from-teal-800 to-teal-900 text-white p-6">
+              <div className="bg-gray-50 border-b border-gray-200 p-6">
                 <div className="flex items-center space-x-3 mb-4">
                   <FaTrophy className="text-orange-400 text-2xl" />
-                  <h2 className="text-2xl lg:text-3xl font-bold font-playfair">
+                  <h2 className="text-2xl lg:text-3xl font-bold font-playfair text-teal-800">
                     USCF-Rated Scholastic Tournament
                   </h2>
                 </div>
-                <p className="text-gray-200 text-lg">
+                <p className="text-gray-600 text-lg">
                   4-Round Swiss System Tournament - All Skill Levels Welcome
                 </p>
               </div>
@@ -196,18 +196,18 @@ export default function UpcomingEvents() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Ready to Compete?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Join us for an exciting day of competitive chess! Perfect for players of all skill levels.
           </p>
           <div className="flex justify-center">
-            <Link 
-              href="/contact-us" 
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
+            <Link
+              href="/contact-us"
+              className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
             >
               Contact Us
             </Link>

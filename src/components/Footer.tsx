@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhoneVolume, FaMapMarkerAlt, FaWhatsapp, FaFacebookF, FaI
 
 const Footer = () => {
   return (
-    <footer className="bg-teal-800 text-white">
+    <footer className="bg-white text-gray-800 border-t border-gray-200">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -19,21 +19,21 @@ const Footer = () => {
                 className="h-20 w-64 rounded-lg shadow-lg"
               />
             </Link>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed">
               MoharChess provides quality chess education for all ages with individualized training.
               We help students develop critical thinking, problem-solving skills, and confidence through chess.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://wa.me/17708158221?text=Hello%20MoharChess!%20I%20would%20like%20to%20know%20more%20about%20your%20chess%20classes." target="_blank" className="text-white hover:text-orange-400 transition-colors">
+              <Link href="https://wa.me/17708158221?text=Hello%20MoharChess!%20I%20would%20like%20to%20know%20more%20about%20your%20chess%20classes." target="_blank" className="text-gray-600 hover:text-orange-400 transition-colors">
                 <FaWhatsapp size={24} />
               </Link>
-              <Link href="https://facebook.com/moharchess" target="_blank" className="text-white hover:text-orange-400 transition-colors">
+              <Link href="https://facebook.com/moharchess" target="_blank" className="text-gray-600 hover:text-orange-400 transition-colors">
                 <FaFacebookF size={24} />
               </Link>
-              <Link href="https://www.instagram.com/moharchess_official?igsh=cjVuYTN3NnpjZ3l3" target="_blank" className="text-white hover:text-orange-400 transition-colors">
+              <Link href="https://www.instagram.com/moharchess_official?igsh=cjVuYTN3NnpjZ3l3" target="_blank" className="text-gray-600 hover:text-orange-400 transition-colors">
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://www.youtube.com/@MoharChess" target="_blank" className="text-white hover:text-orange-400 transition-colors">
+              <Link href="https://www.youtube.com/@MoharChess" target="_blank" className="text-gray-600 hover:text-orange-400 transition-colors">
                 <FaYoutube size={24} />
               </Link>
             </div>
@@ -44,17 +44,17 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-orange-400">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/about-us" className="text-gray-600 hover:text-teal-800 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/our-gallery" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/our-gallery" className="text-gray-600 hover:text-teal-800 transition-colors">
                   Our Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/careers" className="text-gray-600 hover:text-teal-800 transition-colors">
                   Careers
                 </Link>
               </li>
@@ -68,17 +68,16 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-orange-400 mt-1 flex-shrink-0" />
-                <div className="text-gray-300 text-sm">
-                  <p>Georgia, USA</p>
-                  <p>Serving students nationwide</p>
-                  <p>through online classes</p>
+                <div className="text-gray-600 text-sm">
+                  <p>3170 Peachtree Parkway STE 113</p>
+                  <p>Suwanee, GA 30024</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-orange-400 flex-shrink-0" />
                 <Link
                   href="mailto:chess@mohar.org"
-                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                  className="text-gray-600 hover:text-teal-800 transition-colors text-sm"
                 >
                   chess@mohar.org
                 </Link>
@@ -87,7 +86,7 @@ const Footer = () => {
                 <FaPhoneVolume className="text-orange-400 flex-shrink-0" />
                 <Link
                   href="tel:7708158221"
-                  className="text-gray-300 hover:text-white transition-colors text-sm"
+                  className="text-gray-600 hover:text-teal-800 transition-colors text-sm"
                 >
                   7708158221
                 </Link>
@@ -97,19 +96,19 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-teal-700 mt-8 pt-8">
+        <div className="border-t border-gray-200 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-gray-300 text-sm">
+            <div className="text-gray-600 text-sm">
               <p>&copy; 2025 MoharChess. All rights reserved.</p>
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="/privacy-policy" className="text-gray-600 hover:text-teal-800 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="/terms-of-service" className="text-gray-600 hover:text-teal-800 transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/contact-us" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="/contact-us" className="text-gray-600 hover:text-teal-800 transition-colors">
                 Contact
               </Link>
             </div>

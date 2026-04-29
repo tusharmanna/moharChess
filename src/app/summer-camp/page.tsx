@@ -13,14 +13,13 @@ export default function SummerCamp() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-teal-800 to-teal-600 text-white">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div className="relative container mx-auto px-4 py-20">
+      <div className="bg-white">
+        <div className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-teal-800">
               Summer Chess Camp
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-teal-100">
+            <p className="text-xl md:text-2xl mb-8 text-gray-600">
               Join us for an exciting week of chess learning and fun
             </p>
           </div>
@@ -86,17 +85,17 @@ export default function SummerCamp() {
                 </div>
 
                 {/* Contact Information */}
-                <div className="bg-teal-800 text-white p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-center">
+                <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-4 text-center text-teal-800">
                     Contact Information
                   </h3>
                   <div className="text-center space-y-2">
-                    <p className="text-teal-100">
+                    <p className="text-gray-600">
                       <strong>For more Information Contact:</strong>
                     </p>
-                    <p className="text-white">
+                    <p className="text-gray-700">
                       Mohua Maity | (770) 815-8221 |
-                      <a href="mailto:chess@mohar.org" className="text-teal-200 hover:text-white underline ml-1">
+                      <a href="mailto:chess@mohar.org" className="text-teal-700 hover:text-teal-900 underline ml-1">
                         chess@mohar.org
                       </a>
                     </p>

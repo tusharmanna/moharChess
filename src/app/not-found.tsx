@@ -5,7 +5,7 @@ import { FaChess, FaHome, FaArrowLeft } from "react-icons/fa";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-800 to-teal-900 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="text-center">
         {/* Chess Icon */}
         <div className="mb-8">
@@ -13,11 +13,11 @@ export default function NotFound() {
         </div>
 
         {/* Error Message */}
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-4">404</h1>
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 font-playfair">
+        <h1 className="text-6xl md:text-8xl font-bold text-teal-800 mb-4">404</h1>
+        <h2 className="text-2xl md:text-4xl font-bold text-teal-800 mb-4 font-playfair">
           Checkmate! Page Not Found
         </h2>
-        <p className="text-xl text-gray-200 mb-8 max-w-md mx-auto">
+        <p className="text-xl text-gray-600 mb-8 max-w-md mx-auto">
           Looks like this page has made an illegal move. Let&apos;s get you back on track!
         </p>
 
@@ -32,7 +32,7 @@ export default function NotFound() {
           </Link>
           <button
             onClick={() => window.history.back()}
-            className="inline-flex items-center justify-center space-x-2 border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
+            className="inline-flex items-center justify-center space-x-2 border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
           >
             <FaArrowLeft />
             <span>Go Back</span>
@@ -40,8 +40,8 @@ export default function NotFound() {
         </div>
 
         {/* Quick Links */}
-        <div className="mt-12 pt-8 border-t border-teal-700">
-          <p className="text-gray-300 mb-4">Quick Links:</p>
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <p className="text-gray-500 mb-4">Quick Links:</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/about-us" className="text-orange-400 hover:text-orange-300 transition-colors">
               About Us

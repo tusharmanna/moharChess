@@ -365,7 +365,7 @@ export default function PrivateClassRegistration() {
             <div className="flex justify-start">
               <button
                 type="submit"
-                className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition-colors font-medium"
+                className="bg-teal-800 text-white px-6 py-2 rounded hover:bg-teal-900 transition-colors font-medium"
               >
                 NEXT
               </button>

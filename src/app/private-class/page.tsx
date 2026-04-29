@@ -12,16 +12,16 @@ export default function PrivateClass() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
+            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4 text-teal-800">
               Private Chess <span className="text-orange-400">Lessons</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
               One-on-one instruction tailored to your individual learning style and goals
             </p>
-            <nav className="text-gray-200">
+            <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>Private Classes</span>
@@ -202,7 +202,7 @@ export default function PrivateClass() {
               </ul>
               <Link
                 href="/contact-us"
-                className="block text-center bg-teal-800 hover:bg-teal-900 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                className="block text-center border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
               >
                 Book Single Lesson
               </Link>
@@ -283,12 +283,12 @@ export default function PrivateClass() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Ready for Private Lessons?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Take your chess to the next level with personalized one-on-one instruction from our expert coaches.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -300,7 +300,7 @@ export default function PrivateClass() {
             </Link>
             <Link
               href="/contact-us"
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
+              className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
             >
               Contact Us
             </Link>

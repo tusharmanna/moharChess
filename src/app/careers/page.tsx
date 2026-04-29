@@ -5,16 +5,16 @@ export default function Careers() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
+            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4 text-teal-800">
               Join Our <span className="text-orange-400">Team</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
               Become a MoharChess Coach and inspire the next generation of chess players!
             </p>
-            <nav className="text-gray-200">
+            <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>Careers</span>
@@ -275,12 +275,12 @@ export default function Careers() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Start Your Teaching Journey Today!
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Join MoharChess and help shape the next generation of chess players while building your own teaching career.
           </p>
           <Link 

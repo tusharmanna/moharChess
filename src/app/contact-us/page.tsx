@@ -239,13 +239,13 @@ export default function ContactUs() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
+            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4 text-teal-800">
               Contact <span className="text-orange-400">Us</span>
             </h1>
-            <nav className="text-gray-200">
+            <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>Contact Us</span>
@@ -277,8 +277,8 @@ export default function ContactUs() {
                   <div>
                     <h3 className="text-lg font-semibold text-teal-800 mb-2">Address</h3>
                     <p className="text-gray-600">
-                      Georgia, USA<br />
-                      (Serving students nationwide through online classes)
+                      3170 Peachtree Parkway STE 113<br />
+                      Suwanee, GA 30024
                     </p>
                   </div>
                 </div>
@@ -360,7 +360,7 @@ export default function ContactUs() {
               Find Us
             </h2>
             <p className="text-lg text-gray-600">
-              Visit our location in Johns Creek, Georgia
+              Visit our location in Suwanee, Georgia
             </p>
           </div>
           
@@ -380,8 +380,8 @@ export default function ContactUs() {
             <div className="mt-4 text-center">
               <p className="text-gray-600">
                 <strong>Mohar Chess</strong><br />
-                Johns Creek, Georgia<br />
-                Serving students nationwide through online classes
+                3170 Peachtree Parkway STE 113<br />
+                Suwanee, GA 30024
               </p>
             </div>
           </div>
@@ -389,12 +389,12 @@ export default function ContactUs() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Don&apos;t wait! Join MoharChess today and start your chess journey with individualized training.
           </p>
         </div>

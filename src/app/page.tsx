@@ -71,21 +71,21 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 fade-in">
-              <h1 className="text-4xl lg:text-6xl font-bold font-playfair">
+              <h1 className="text-4xl lg:text-6xl font-bold font-playfair text-teal-800">
                 Become a Chess Pro with{" "}
                 <span className="text-orange-400">MoharChess!</span>
               </h1>
-              <p className="text-xl text-gray-200 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed">
                 Experience individualized chess training that develops discipline, analytical skills, and confidence for all ages.
               </p>
               <div className="flex justify-center">
                 <Link
                   href="/about-us"
-                  className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-center"
+                  className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-center"
                 >
                   Learn More
                 </Link>
@@ -199,18 +199,18 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Ready to Start Your Chess Journey?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Join students who have improved their chess skills and critical thinking abilities with MoharChess&apos;s individualized training approach.
           </p>
           <div className="flex justify-center">
             <Link
               href="/contact-us"
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
+              className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
             >
               Contact Us
             </Link>

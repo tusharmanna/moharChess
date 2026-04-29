@@ -13,16 +13,16 @@ export default function OurGallery() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
+            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4 text-teal-800">
               Our <span className="text-orange-400">Gallery</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
               Explore moments from our chess classes, tournaments, and special events
             </p>
-            <nav className="text-gray-200">
+            <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>Our Gallery</span>
@@ -312,19 +312,19 @@ export default function OurGallery() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Want to Be Featured in Our Gallery?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Join our chess classes and tournaments to become part of the MoharChess community!
           </p>
           <div className="flex justify-center">
-            <Link 
-              href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8" 
+            <Link
+              href="https://photos.app.goo.gl/rrNUjhm4JmuAS1ZH8"
               target="_blank"
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+              className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
             >
               <FaExternalLinkAlt />
               <span>View Gallery</span>

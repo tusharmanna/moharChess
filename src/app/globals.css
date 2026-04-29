@@ -45,11 +45,28 @@ html {
 
 /* Custom text styles */
 .text-orange {
-  color: #DA8F27;
+  color: #da8f27;
 }
 
 .text-teal {
   color: #124548;
+}
+
+/* All headings use the brand orange — same color as "MoharChess!"
+   Exclude headings already explicitly colored yellow, orange, or white. */
+h1:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']),
+h2:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']),
+h3:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']),
+h4:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']),
+h5:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']),
+h6:not([class*='text-yellow']):not([class*='text-orange']):not([class*='text-white']) {
+  color: #fb923c;
+}
+
+/* Bold inline text also uses brand orange */
+strong,
+b {
+  color: #fb923c;
 }
 
 /* Animation classes */

@@ -12,16 +12,16 @@ export default function GroupClass() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
+            <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4 text-teal-800">
               Group Chess <span className="text-orange-400">Classes</span>
             </h1>
-            <p className="text-xl text-gray-200 mb-6 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
               Learn chess together in a fun, collaborative environment with fellow chess enthusiasts
             </p>
-            <nav className="text-gray-200">
+            <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>Group Classes</span>
@@ -210,7 +210,7 @@ export default function GroupClass() {
                 </div>
                 <Link
                   href="/contact-us"
-                  className="block mt-6 text-center bg-teal-800 hover:bg-teal-900 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                  className="block mt-6 text-center border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
                 >
                   Join Online Class
                 </Link>
@@ -308,12 +308,12 @@ export default function GroupClass() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Ready to Join a Group Class?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Experience the fun of learning chess with others. Join our group classes today!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -325,7 +325,7 @@ export default function GroupClass() {
             </Link>
             <Link
               href="/browse-sessions"
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
+              className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
             >
               View Schedule
             </Link>

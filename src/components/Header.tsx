@@ -113,7 +113,7 @@ const Header = () => {
                   alt="MoharChess"
                   width={280}
                   height={80}
-                  className="h-20 w-64 rounded-lg shadow-lg"
+                  className="h-20 w-64"
                 />
               </Link>
             </div>
@@ -122,7 +122,7 @@ const Header = () => {
             <nav className="hidden lg:flex items-center space-x-8">
               <Link
                 href="/"
-                className="bg-teal-800 text-white px-4 py-2 font-medium hover:bg-teal-900 transition-colors"
+                className="text-teal-800 font-medium transition-colors"
               >
                 Home
               </Link>

@@ -6,14 +6,13 @@ export default function AfterSchoolProgram() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-teal-800 to-teal-600 text-white">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div className="relative container mx-auto px-4 py-20">
+      <div className="bg-white">
+        <div className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-teal-800">
               After School Chess Program
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-teal-100">
+            <p className="text-xl md:text-2xl mb-8 text-gray-600">
               Develop strategic thinking, concentration, and sportsmanship through chess
             </p>
           </div>
@@ -108,17 +107,17 @@ export default function AfterSchoolProgram() {
                 </div>
 
                 {/* Contact Information */}
-                <div className="bg-teal-800 text-white p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-center">
+                <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-4 text-center text-teal-800">
                     Questions About the Program?
                   </h3>
-                  <p className="text-center mb-4 text-teal-100">
+                  <p className="text-center mb-4 text-gray-600">
                     Contact us for more information about our after school chess program
                   </p>
                   <div className="text-center">
-                    <Link 
-                      href="/contact-us" 
-                      className="bg-white text-teal-800 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+                    <Link
+                      href="/contact-us"
+                      className="border-2 border-teal-800 text-teal-800 px-6 py-2 rounded-lg font-semibold hover:bg-teal-800 hover:text-white transition-colors inline-block"
                     >
                       Contact Us
                     </Link>

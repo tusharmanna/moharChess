@@ -162,13 +162,13 @@ export default function Enroll() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-800 to-teal-900 text-white py-20">
+      <section className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4">
               <span className="text-orange-400">ENROLL</span>
             </h1>
-            <nav className="text-gray-200">
+            <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
               <span className="mx-2">»</span>
               <span>Enroll</span>
@@ -216,7 +216,7 @@ export default function Enroll() {
                     <div key={tournament.id} className="border border-gray-200 rounded-lg overflow-hidden">
                       <button
                         onClick={() => toggleSection(tournament.id)}
-                        className="w-full bg-black text-white p-4 flex items-center justify-between hover:bg-gray-800 transition-colors"
+                        className="w-full bg-gray-100 text-gray-800 p-4 flex items-center justify-between hover:bg-gray-200 transition-colors"
                       >
                         <span className="font-medium">{tournament.title}</span>
                         {openSections[tournament.id] ? <FaChevronUp /> : <FaChevronDown />}
@@ -240,7 +240,7 @@ export default function Enroll() {
                     <div key={classItem.id} className="border border-gray-200 rounded-lg overflow-hidden">
                       <button
                         onClick={() => toggleSection(classItem.id)}
-                        className="w-full bg-black text-white p-4 flex items-center justify-between hover:bg-gray-800 transition-colors"
+                        className="w-full bg-gray-100 text-gray-800 p-4 flex items-center justify-between hover:bg-gray-200 transition-colors"
                       >
                         <span className="font-medium">{classItem.title}</span>
                         {openSections[classItem.id] ? <FaChevronUp /> : <FaChevronDown />}
@@ -260,24 +260,24 @@ export default function Enroll() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-teal-800 text-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold font-playfair mb-4 text-teal-800">
             Ready to Start Your Chess Journey?
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Contact us today to learn more about our programs and find the perfect chess class for you or your child.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="mailto:chess@mohar.org?subject=Chess Program Inquiry" 
+            <Link
+              href="mailto:chess@mohar.org?subject=Chess Program Inquiry"
               className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
             >
               Contact Us Today
             </Link>
-            <Link 
-              href="/contact-us" 
-              className="border-2 border-white text-white hover:bg-white hover:text-teal-800 font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
+            <Link
+              href="/contact-us"
+              className="border-2 border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300"
             >
               Visit Contact Page
             </Link>
