@@ -8,7 +8,8 @@
       "WebFetch(domain:docs.google.com)",
       "Bash(taskkill /PID 15380 /F)",
       "PowerShell(Stop-Process *)",
-      "PowerShell(Get-Process *)"
+      "PowerShell(Get-Process *)",
+      "Bash(git push *)"
     ]
   }
 }

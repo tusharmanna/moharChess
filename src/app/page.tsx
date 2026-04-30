@@ -3,10 +3,9 @@ import Link from "next/link";
 import { FaChess, FaTrophy, FaUsers, FaGraduationCap } from "react-icons/fa";
 
 export default function Home() {
-  // Schema.org structured data for local business
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": ["LocalBusiness", "EducationalOrganization"],
     "name": "MoharChess",
     "alternateName": "Mohar Chess School",
     "description": "Professional chess education for all ages with individualized training. Offering online classes, private lessons, group classes, tournaments, and summer camps.",
@@ -15,12 +14,28 @@ export default function Home() {
     "image": "https://moharchess.com/images/chess-hero.jpg",
     "telephone": "+1-770-815-8221",
     "email": "chess@mohar.org",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Johns Creek",
+      "streetAddress": "3170 Peachtree Parkway STE 113",
+      "addressLocality": "Suwanee",
       "addressRegion": "GA",
+      "postalCode": "30024",
       "addressCountry": "US"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0292,
+      "longitude": -84.2589
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
     "founder": {
       "@type": "Person",
       "name": "Mohua Maity",
@@ -34,10 +49,7 @@ export default function Home() {
           "@type": "Course",
           "name": "Private Chess Lessons",
           "description": "One-on-one chess instruction tailored to individual learning style",
-          "provider": {
-            "@type": "Organization",
-            "name": "MoharChess"
-          }
+          "provider": { "@type": "Organization", "name": "MoharChess" }
         },
         "price": "60",
         "priceCurrency": "USD"
@@ -48,10 +60,7 @@ export default function Home() {
           "@type": "Course",
           "name": "Group Chess Classes",
           "description": "Interactive group chess sessions for all skill levels",
-          "provider": {
-            "@type": "Organization",
-            "name": "MoharChess"
-          }
+          "provider": { "@type": "Organization", "name": "MoharChess" }
         },
         "price": "35",
         "priceCurrency": "USD"
@@ -59,7 +68,8 @@ export default function Home() {
     ],
     "sameAs": [
       "https://facebook.com/moharchess",
-      "https://www.instagram.com/moharchess_official"
+      "https://www.instagram.com/moharchess_official",
+      "https://www.youtube.com/@MoharChess"
     ]
   };
 
