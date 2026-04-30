@@ -187,7 +187,7 @@ ${formData.firstName} ${formData.lastName}
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-gray-800"
         >
           <option value="">Select a subject</option>
           <option value="Enrollment Information">Enrollment Information</option>
@@ -210,7 +210,7 @@ ${formData.firstName} ${formData.lastName}
           value={formData.message}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors resize-vertical"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors resize-vertical text-gray-800"
           placeholder="Tell us how we can help you..."
         ></textarea>
       </div>
