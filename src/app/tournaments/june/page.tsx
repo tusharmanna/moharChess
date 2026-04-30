@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "Summer Chess Camp - July 2025",
-  description: "Join our Summer Chess Camp in Johns Creek, GA. Ages 7-13, July 21-25, 9:30 AM - 4:30 PM. $350 entry fee includes all materials. Learn chess strategies, make friends, and have fun!",
-  keywords: "summer chess camp, kids chess camp, chess summer program, johns creek chess camp, youth chess camp atlanta",
-  ogImage: "/images/SummerCampJuly2025.jpg"
+  title: "June Chess Tournaments - USCF Rated Scholastic Competitions",
+  description: "Join our USCF-rated scholastic chess tournaments in June. 4-round Swiss system with sections for all skill levels. Located in Roswell, GA. Tournament preparation and competitive chess.",
+  keywords: "uscf tournament, chess tournament, scholastic chess, rated chess tournament, georgia chess tournament, youth chess competition, june tournament",
+  ogImage: "/images/rated-banner.jpg"
 });
 
-export default function SummerCamp() {
+export default function JuneTournaments() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -17,10 +17,10 @@ export default function SummerCamp() {
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-teal-800">
-              Summer Chess Camp
+              June Chess Tournaments
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-600">
-              Join us for an exciting week of chess learning and fun
+              Compete in USCF-rated tournaments and test your skills
             </p>
           </div>
         </div>
@@ -34,53 +34,68 @@ export default function SummerCamp() {
               {/* Registration Form */}
               <div className="bg-gray-50 p-4 md:p-6 rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-                  Summer Camp Registration
+                  Tournament Registration
                 </h2>
                 <div className="w-full rounded-lg">
                   <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfP-UhMkoM6Hp60FzqyE2MK5-zeQxC9Kh6NghzSB8Th2hlE2A/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScuvlfPlRVYlJgmbI0Et4-mMAjT8YZpH8gMHsOR8p3zTUuj2A/viewform?embedded=true"
                     className="w-full border-0"
                     style={{height: '2200px'}}
-                    title="Summer Camp Registration Form"
+                    title="Tournament Registration Form"
                   >
                     Loading…
                   </iframe>
                 </div>
               </div>
 
-              {/* Summer Camp Details */}
+              {/* Tournament Details */}
               <div className="space-y-6">
-                {/* Summer Camp Image */}
+                {/* Tournament Banner */}
                 <div className="text-center">
-                  <Image 
-                    src="/images/SummerCampJuly2025.jpg" 
-                    alt="Mohar Summer Camp 2025" 
-                    width={400} 
-                    height={300} 
+                  <Image
+                    src="/images/rated-banner.jpg"
+                    alt="Tournament Banner"
+                    width={400}
+                    height={300}
                     className="w-full rounded-lg shadow-md"
                   />
                 </div>
 
-                {/* Camp Information */}
+                {/* Tournament Information */}
                 <div className="bg-teal-50 p-6 rounded-lg border border-teal-200">
                   <h3 className="text-xl font-bold text-teal-800 mb-4 text-center">
-                    Camp Details
+                    Tournament Details
                   </h3>
                   <div className="space-y-3 text-gray-700">
                     <p>
-                      <strong>Age Group:</strong> 7 to 13
+                      <strong>Date:</strong> June 2026
                     </p>
                     <p>
-                      <strong>Dates:</strong> July 21 - 25
+                      <strong>Time:</strong> 09:30 am to 04:30 pm
                     </p>
-                    <p>
-                      <strong>Time:</strong> 9:30 AM - 4:30 PM
+                    <div className="mt-3 pt-3 border-t border-teal-200">
+                      <p className="font-semibold text-teal-800 mb-2">Registration Fees:</p>
+                      <p>Early entry: <strong>$40</strong></p>
+                      <p>Regular: <strong>$45</strong></p>
+                      <p>Late registration: <strong>$50</strong></p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tournament Format */}
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                    Tournament Format
+                  </h3>
+                  <p className="text-gray-700 mb-4">
+                    This is a 4-round USCF-rated Scholastic tournament, with Time Control G/25; d5.
+                  </p>
+                  <div className="space-y-3">
+                    <p className="text-gray-700">
+                      <strong>Sections:</strong> Unrated, U/400, U/800, U/1200.
                     </p>
-                    <p>
-                      <strong>Entry Fee:</strong> $350
-                    </p>
-                    <p>
-                      <strong>Location:</strong> Johns Creek
+                    <p className="text-gray-700">
+                      <strong>Rounds:</strong> 10:00 am; 11:30 am; 1:00 pm; 2:30 pm or as soon as possible
                     </p>
                   </div>
                 </div>
@@ -92,7 +107,7 @@ export default function SummerCamp() {
                   </h3>
                   <div className="text-center space-y-2">
                     <p className="text-gray-600">
-                      <strong>For more Information Contact:</strong>
+                      <strong>For more information, Contact:</strong>
                     </p>
                     <p className="text-gray-700">
                       Mohua Maity | (770) 815-8221 |
@@ -100,6 +115,18 @@ export default function SummerCamp() {
                         chess@mohar.org
                       </a>
                     </p>
+                  </div>
+                </div>
+
+                {/* Location */}
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                    Tournament Location
+                  </h3>
+                  <div className="text-gray-700">
+                    <p className="font-semibold">Best Western</p>
+                    <p>907 Holcomb Bridge Rd</p>
+                    <p>Roswell, GA 30076</p>
                   </div>
                 </div>
 
@@ -111,43 +138,13 @@ export default function SummerCamp() {
                   <ul className="space-y-2 text-yellow-800">
                     <li className="flex items-start space-x-2">
                       <span className="text-yellow-600 mt-1">•</span>
-                      <span><em>All the materials needed will be provided by Mohar Chess.</em></span>
+                      <span><em>Bring clocks, as the club has a limited number of clocks.</em></span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <span className="text-yellow-600 mt-1">•</span>
-                      <span><em>Reach out for group discounts, sibling discounts and multiple week sign discounts too.</em></span>
+                      <span><em>USCF membership is required for all rated sections.</em></span>
                     </li>
                   </ul>
-                </div>
-
-                {/* What to Expect */}
-                <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                    What to Expect
-                  </h3>
-                  <div className="space-y-3 text-gray-700">
-                    <p>
-                      Our summer chess camp provides a comprehensive learning experience where students will:
-                    </p>
-                    <ul className="space-y-2 ml-4">
-                      <li className="flex items-start space-x-2">
-                        <span className="text-teal-600 mt-1">•</span>
-                        <span>Learn chess fundamentals and advanced strategies</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-teal-600 mt-1">•</span>
-                        <span>Participate in friendly competitions and games</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-teal-600 mt-1">•</span>
-                        <span>Develop critical thinking and problem-solving skills</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <span className="text-teal-600 mt-1">•</span>
-                        <span>Make new friends who share their passion for chess</span>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>

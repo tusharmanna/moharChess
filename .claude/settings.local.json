@@ -1,5 +1,11 @@
 {
   "permissions": {
-    "allow": ["Bash(npm run:*)", "Bash(npx next:*)", "Bash(npm install:*)", "Bash(xargs sed:*)"]
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npx next:*)",
+      "Bash(npm install:*)",
+      "Bash(xargs sed:*)",
+      "WebFetch(domain:docs.google.com)"
+    ]
   }
 }

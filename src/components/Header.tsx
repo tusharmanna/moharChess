@@ -8,6 +8,7 @@ import { FaEnvelope, FaPhoneVolume, FaWhatsapp, FaFacebookF, FaInstagram, FaYout
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isTournamentsOpen, setIsTournamentsOpen] = useState(false);
+  const [isSummerCampOpen, setIsSummerCampOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -134,10 +135,11 @@ const Header = () => {
                   <span>Tournaments</span>
                   <FaChevronDown size={12} />
                 </button>
-                <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
-                  <Link href="/tournaments/may" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg">
-                    May
-                  </Link>
+                <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
+                  <Link href="/tournaments/may" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg">May</Link>
+                  <Link href="/tournaments/june" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100">June</Link>
+                  <Link href="/tournaments/july" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100">July</Link>
+                  <Link href="/tournaments/august" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 rounded-b-lg">August</Link>
                 </div>
               </div>
               <div className="relative group">
@@ -146,18 +148,22 @@ const Header = () => {
                   <FaChevronDown size={12} />
                 </button>
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
-                  <Link href="/summer-camp" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100 rounded-t-lg">
-                    SUMMER CAMP
-                  </Link>
-                  <Link href="/workshops" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">
-                    WORKSHOPS
-                  </Link>
-                  <Link href="/after-school-program" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">
-                    AFTER SCHOOL PROGRAM
-                  </Link>
-                  <Link href="/browse-sessions" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium rounded-b-lg">
-                    BROWSE SESSIONS
-                  </Link>
+                  {/* Summer Camp with nested flyout */}
+                  <div className="relative group/summercamp">
+                    <div className="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100 rounded-t-lg cursor-default">
+                      <span>SUMMER CAMP</span>
+                      <FaChevronDown size={10} className="-rotate-90" />
+                    </div>
+                    <div className="absolute left-full top-0 w-36 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover/summercamp:opacity-100 group-hover/summercamp:visible transition-all duration-300 z-50 border">
+                      <Link href="/summer-camp/week1" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg text-sm">Week 1</Link>
+                      <Link href="/summer-camp/week2" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 text-sm">Week 2</Link>
+                      <Link href="/summer-camp/week3" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 text-sm">Week 3</Link>
+                      <Link href="/summer-camp/week4" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 rounded-b-lg text-sm">Week 4</Link>
+                    </div>
+                  </div>
+                  <Link href="/workshops" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">WORKSHOPS</Link>
+                  <Link href="/after-school-program" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">AFTER SCHOOL PROGRAM</Link>
+                  <Link href="/browse-sessions" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium rounded-b-lg">BROWSE SESSIONS</Link>
                 </div>
               </div>
               <Link href="/our-gallery" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
@@ -216,28 +222,35 @@ const Header = () => {
                 </button>
                 {isTournamentsOpen && (
                   <div className="pl-4 mt-2 space-y-2">
-                    <Link href="/tournaments/may" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
-                      May
-                    </Link>
+                    <Link href="/tournaments/may" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">May</Link>
+                    <Link href="/tournaments/june" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">June</Link>
+                    <Link href="/tournaments/july" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">July</Link>
+                    <Link href="/tournaments/august" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">August</Link>
                   </div>
                 )}
               </div>
-              <div className="text-gray-700 font-medium">
-                Our Programs
-              </div>
+              <div className="text-gray-700 font-medium">Our Programs</div>
               <div className="pl-4 space-y-2">
-                <Link href="/summer-camp" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
-                  SUMMER CAMP
-                </Link>
-                <Link href="/workshops" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
-                  WORKSHOPS
-                </Link>
-                <Link href="/after-school-program" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
-                  AFTER SCHOOL PROGRAM
-                </Link>
-                <Link href="/browse-sessions" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">
-                  BROWSE SESSIONS
-                </Link>
+                <div>
+                  <button
+                    onClick={() => setIsSummerCampOpen(!isSummerCampOpen)}
+                    className="flex items-center justify-between w-full text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm"
+                  >
+                    <span>SUMMER CAMP</span>
+                    <FaChevronDown size={10} className={`transition-transform ${isSummerCampOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isSummerCampOpen && (
+                    <div className="pl-4 mt-2 space-y-2">
+                      <Link href="/summer-camp/week1" className="block text-gray-500 hover:text-teal-800 transition-colors text-sm">Week 1</Link>
+                      <Link href="/summer-camp/week2" className="block text-gray-500 hover:text-teal-800 transition-colors text-sm">Week 2</Link>
+                      <Link href="/summer-camp/week3" className="block text-gray-500 hover:text-teal-800 transition-colors text-sm">Week 3</Link>
+                      <Link href="/summer-camp/week4" className="block text-gray-500 hover:text-teal-800 transition-colors text-sm">Week 4</Link>
+                    </div>
+                  )}
+                </div>
+                <Link href="/workshops" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">WORKSHOPS</Link>
+                <Link href="/after-school-program" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">AFTER SCHOOL PROGRAM</Link>
+                <Link href="/browse-sessions" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">BROWSE SESSIONS</Link>
               </div>
               <Link href="/online-chess-school" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Online Chess School

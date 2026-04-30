@@ -36,10 +36,11 @@ export default function MayTournaments() {
                 <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
                   Tournament Registration
                 </h2>
-                <div className="relative w-full overflow-hidden rounded-lg" style={{paddingBottom: '120%'}}>
+                <div className="w-full rounded-lg">
                   <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSd9VARqMMktlS1xL6JG4LDRRxZUT_z4B4zgt_bDk9DSkmP4eA/viewform?embedded=true"
-                    className="absolute top-0 left-0 w-full h-full border-0"
+                    className="w-full border-0"
+                    style={{height: '2200px'}}
                     title="Tournament Registration Form"
                   >
                     Loading…
