@@ -5,7 +5,9 @@
       "Bash(npx next:*)",
       "Bash(npm install:*)",
       "Bash(xargs sed:*)",
-      "WebFetch(domain:docs.google.com)"
+      "WebFetch(domain:docs.google.com)",
+      "Bash(taskkill /PID 15380 /F)",
+      "PowerShell(Stop-Process *)"
     ]
   }
 }

@@ -38,11 +38,18 @@ function ContactForm() {
 
     try {
       // Check if EmailJS is configured
-      if (isEmailJSConfigured() && formRef.current) {
-        await emailjs.sendForm(
+      if (isEmailJSConfigured()) {
+        await emailjs.send(
           env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
           env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-          formRef.current,
+          {
+            firstName: formData.firstName,
+            lastName:  formData.lastName,
+            email:     formData.email,
+            phone:     formData.phone || 'Not provided',
+            subject:   formData.subject,
+            message:   formData.message,
+          },
           env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
         );
 
@@ -157,7 +164,7 @@ ${formData.firstName} ${formData.lastName}
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors text-gray-800"
           placeholder="your.email@example.com"
         />
       </div>
