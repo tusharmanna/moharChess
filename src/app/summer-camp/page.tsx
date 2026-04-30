@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "Summer Chess Camp - July 2025",
-  description: "Join our Summer Chess Camp in Johns Creek, GA. Ages 7-13, July 21-25, 9:30 AM - 4:30 PM. $350 entry fee includes all materials. Learn chess strategies, make friends, and have fun!",
-  keywords: "summer chess camp, kids chess camp, chess summer program, johns creek chess camp, youth chess camp atlanta",
+  title: "Summer Chess Camp 2025 - Suwanee & Johns Creek, GA",
+  description: "Summer Chess Camp near Atlanta, GA — ages 7–13. Serving Suwanee, Johns Creek, Alpharetta, Cumming & Atlanta. July 21–25, 9:30 AM–4:30 PM. $350 includes all materials.",
+  keywords: "summer chess camp Suwanee, kids chess camp Johns Creek, chess summer program Alpharetta, youth chess camp Cumming GA, chess camp Atlanta Georgia, chess summer school near me",
   ogImage: "/images/SummerCampJuly2025.jpg"
 });
 

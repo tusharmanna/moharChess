@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { FaGraduationCap, FaLaptop, FaClock, FaCheckCircle, FaEnvelope } from "react-icons/fa";
+import { generateMetadata as genMeta } from "@/lib/metadata";
+
+export const metadata = genMeta({
+  title: "Careers - Join the MoharChess Team",
+  description: "Join MoharChess as a chess instructor serving Suwanee, Johns Creek, Alpharetta, Cumming & Atlanta, GA. USCF-certified coaches wanted. Flexible schedules, competitive pay.",
+  keywords: "chess instructor jobs Georgia, chess teacher Suwanee, chess coach Johns Creek, chess instructor Alpharetta, chess teacher Cumming GA, chess school jobs Atlanta Georgia",
+});
 
 export default function Careers() {
   return (

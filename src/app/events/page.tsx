@@ -3,9 +3,9 @@ import { FaCalendarAlt, FaClock, FaTrophy, FaMapMarkerAlt, FaEnvelope, FaPhoneVo
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "Upcoming Events - Chess Tournaments & Workshops",
-  description: "Join our upcoming USCF-rated scholastic chess tournaments and events. October 12, 2025 at Holiday Inn, Roswell GA. 4-round Swiss system, all skill levels welcome.",
-  keywords: "chess events, upcoming tournaments, chess workshops, georgia chess events, scholastic chess events"
+  title: "Upcoming Events - Chess Tournaments Near Atlanta, GA",
+  description: "Upcoming USCF-rated chess tournaments and events near Atlanta, GA. Open to players from Suwanee, Johns Creek, Alpharetta, Cumming & surrounding areas. All skill levels welcome.",
+  keywords: "chess tournaments Atlanta GA, chess events Suwanee, USCF tournament Johns Creek, chess competition Alpharetta, chess tournament Cumming GA, scholastic chess Georgia"
 });
 
 export default function UpcomingEvents() {

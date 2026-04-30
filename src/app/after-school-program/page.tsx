@@ -1,6 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from "@/lib/metadata";
+
+export const metadata = genMeta({
+  title: "After School Chess Program - Suwanee, Johns Creek & Alpharetta",
+  description: "After-school chess program for K–12 students in Suwanee, Johns Creek, Alpharetta, Cumming & Atlanta, GA. Builds critical thinking, focus, and problem-solving skills.",
+  keywords: "after school chess Suwanee, chess program Johns Creek, chess enrichment Alpharetta, after school chess Cumming GA, kids chess program Atlanta, school chess club Georgia",
+});
 
 export default function AfterSchoolProgram() {
   return (

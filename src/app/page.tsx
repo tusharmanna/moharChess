@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaChess, FaTrophy, FaUsers, FaGraduationCap } from "react-icons/fa";
+import { generateMetadata as genMeta } from "@/lib/metadata";
+
+export const metadata = genMeta({
+  title: "Chess Classes for Kids in Suwanee, Johns Creek & Atlanta, GA",
+  description: "Chess classes for kids in Suwanee, Johns Creek, Alpharetta, Cumming & Atlanta, GA. Private lessons, group classes, summer camps, and USCF-rated tournaments. Enroll today!",
+  keywords: "chess classes for kids Suwanee GA, chess lessons Johns Creek, chess school Alpharetta, chess classes Cumming GA, kids chess Atlanta, chess tutor Georgia, USCF chess school, chess camp near me",
+});
 
 export default function Home() {
   const schemaData = {

@@ -3,9 +3,9 @@ import { FaUserGraduate, FaClock, FaChartLine, FaCalendarCheck, FaVideo, FaStar 
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "Private Chess Lessons - One-on-One Instruction",
-  description: "Personalized chess lessons tailored to your goals. $60/hour or $550 for 10 lessons. Expert USCF-certified coaches, flexible scheduling, online or in-person. Accelerate your chess improvement.",
-  keywords: "private chess lessons, one on one chess, chess tutoring, personalized chess training, chess coach"
+  title: "Private Chess Lessons - One-on-One Near Atlanta, GA",
+  description: "One-on-one private chess lessons in Suwanee, Johns Creek, Alpharetta, Cumming & Atlanta, GA. $60/hr or $550 for 10 lessons. USCF-certified coaches, online or in-person.",
+  keywords: "private chess lessons Suwanee, chess tutor Johns Creek, one on one chess Alpharetta, chess coaching Cumming GA, personal chess instructor Atlanta Georgia",
 });
 
 export default function PrivateClass() {

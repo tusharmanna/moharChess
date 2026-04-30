@@ -4,8 +4,8 @@ import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
   title: "Online Chess School - Learn Chess From Home",
-  description: "Join our online chess school and learn from USCF-certified instructors. Flexible scheduling, small group sizes, expert instruction. Classes for beginners to advanced players.",
-  keywords: "online chess lessons, virtual chess classes, online chess school, learn chess online, chess zoom classes"
+  description: "Online chess school for students in Suwanee, Johns Creek, Alpharetta, Cumming, Atlanta & beyond. USCF-certified instructors, flexible scheduling, beginner to advanced.",
+  keywords: "online chess lessons Georgia, virtual chess classes Atlanta, online chess school Suwanee, learn chess from home Johns Creek, chess zoom classes Alpharetta, online chess tutor Cumming GA",
 });
 
 export default function OnlineChessSchool() {

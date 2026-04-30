@@ -3,9 +3,9 @@ import { FaUsers, FaHandsHelping, FaTrophy, FaChessBoard, FaClock, FaHeart } fro
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "Group Chess Classes - Learn Together",
-  description: "Join our group chess classes for a fun, collaborative learning experience. Online ($35) and in-person ($45) options. Small groups, all skill levels. Package deals available with up to 20% savings.",
-  keywords: "group chess classes, chess class near me, kids chess class, beginner chess class, intermediate chess class"
+  title: "Group Chess Classes - Suwanee, Johns Creek & Atlanta, GA",
+  description: "Group chess classes in Suwanee, Johns Creek, Alpharetta, Cumming & Atlanta, GA. Online ($35) or in-person ($45). Small groups, all skill levels, package discounts available.",
+  keywords: "group chess classes Suwanee, chess class Johns Creek, kids chess Alpharetta, group chess lessons Cumming GA, chess class near me Atlanta Georgia, beginner chess class",
 });
 
 export default function GroupClass() {

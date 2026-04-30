@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "May Chess Tournaments - USCF Rated Scholastic Competitions",
-  description: "Join our USCF-rated scholastic chess tournaments in May. 4-round Swiss system with sections for all skill levels. Located in Roswell, GA. Tournament preparation and competitive chess.",
-  keywords: "uscf tournament, chess tournament, scholastic chess, rated chess tournament, georgia chess tournament, youth chess competition, may tournament",
+  title: "May Chess Tournaments - USCF Rated Near Atlanta, GA",
+  description: "USCF-rated scholastic chess tournaments in May near Atlanta, GA. Open to players from Suwanee, Johns Creek, Alpharetta, Cumming & surrounding areas. All skill levels welcome.",
+  keywords: "USCF chess tournament Atlanta, chess competition Suwanee, scholastic chess Johns Creek, rated chess tournament Alpharetta, chess tournament Cumming GA, Georgia chess tournament May",
   ogImage: "/images/rated-banner.jpg"
 });
 

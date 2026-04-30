@@ -1,4 +1,11 @@
 import Link from "next/link";
+import { generateMetadata as genMeta } from "@/lib/metadata";
+
+export const metadata = genMeta({
+  title: "Browse Chess Sessions - Classes Near Atlanta, GA",
+  description: "Browse chess sessions at MoharChess — private lessons & group classes online or in-person. Serving Suwanee, Johns Creek, Alpharetta, Cumming & Atlanta, GA.",
+  keywords: "chess class schedule Suwanee, chess lessons Johns Creek, book chess class Alpharetta, chess sessions Cumming GA, chess classes near me Atlanta Georgia",
+});
 
 export default function BrowseSessions() {
   return (
