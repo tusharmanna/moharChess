@@ -172,6 +172,9 @@ const Header = () => {
               <Link href="/careers" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Careers
               </Link>
+              <Link href="/faq" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
+                FAQ
+              </Link>
               <Link href="/contact-us" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Contact Us
               </Link>
@@ -260,6 +263,9 @@ const Header = () => {
               </Link>
               <Link href="/careers" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Careers
+              </Link>
+              <Link href="/faq" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
+                FAQ
               </Link>
               <Link href="/contact-us" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Contact Us

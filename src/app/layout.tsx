@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
+import ChatbaseWidget from "@/components/ChatbaseWidget";
 
 const inter = Inter({ subsets: ["latin"] });
 const playfair = Playfair_Display({
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <ChatbaseWidget />
       </body>
     </html>
   );
