@@ -108,7 +108,7 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/">
+              <Link href="/" className="flex flex-col items-center">
                 <Image
                   src="/images/mohar.jpg"
                   alt="MoharChess"
@@ -116,6 +116,13 @@ const Header = () => {
                   height={80}
                   className="h-20 w-64"
                 />
+                <div className="flex items-center gap-2 -mt-1">
+                  <div className="h-px w-6 bg-stone-700"></div>
+                  <span className="text-stone-700 font-manrope font-semibold tracking-[0.2em] text-xs uppercase">
+                    Chess Academy
+                  </span>
+                  <div className="h-px w-6 bg-stone-700"></div>
+                </div>
               </Link>
             </div>
 

@@ -40,56 +40,16 @@ export default function Workshops() {
               </p>
             </div>
 
-            {/* Workshop Options */}
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Senior Workshop */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <Link href="/senior-workshop" className="block">
-                  <div className="relative">
-                    <Image 
-                      src="/images/20250518-chess-workshop-senior.jpg" 
-                      alt="Senior Chess Workshop" 
-                      width={600} 
-                      height={400} 
-                      className="w-full h-auto object-cover"
-                      style={{ width: '100%' }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-10 transition-all duration-300"></div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                      Senior Chess Workshop
-                    </h3>
-                    <p className="text-gray-600">
-                      Specialized chess instruction designed for senior citizens, focusing on cognitive stimulation and social interaction.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-
-              {/* Mindfulness Chess Workshop */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <Link href="/mindfulness-workshop" className="block">
-                  <div className="relative">
-                    <Image 
-                      src="/images/mindfulness-chess-workshop.jpg" 
-                      alt="Mindfulness Chess Workshop" 
-                      width={600} 
-                      height={400} 
-                      className="w-full h-auto object-cover"
-                      style={{ width: '100%' }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-10 transition-all duration-300"></div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                      Mindfulness Chess Workshop
-                    </h3>
-                    <p className="text-gray-600">
-                      Combine chess strategy with mindfulness techniques to improve focus, concentration, and mental well-being.
-                    </p>
-                  </div>
-                </Link>
+            {/* Workshop Flyer */}
+            <div className="flex justify-center">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-lg w-full">
+                <Image
+                  src="/images/workshop-64-squares-studio.jpg"
+                  alt="64 Squares Studio - 3-Day Premium Chess Workshop"
+                  width={600}
+                  height={900}
+                  className="w-full h-auto"
+                />
               </div>
             </div>
 

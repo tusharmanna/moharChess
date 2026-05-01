@@ -42,8 +42,8 @@ export default function AboutUs() {
                   <Image
                     src="/images/Mohua.jpg"
                     alt="Mohua Maity"
-                    width={200}
-                    height={200}
+                    width={280}
+                    height={280}
                     className="rounded-full border-4 border-teal-800 shadow-2xl"
                   />
                 </div>
