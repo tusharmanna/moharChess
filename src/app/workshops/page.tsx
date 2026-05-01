@@ -40,16 +40,36 @@ export default function Workshops() {
               </p>
             </div>
 
-            {/* Workshop Flyer */}
-            <div className="flex justify-center">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-lg w-full">
-                <Image
-                  src="/images/workshop-64-squares-studio.jpg"
-                  alt="64 Squares Studio - 3-Day Premium Chess Workshop"
-                  width={600}
-                  height={900}
-                  className="w-full h-auto"
-                />
+            {/* Registration Form + Flyer */}
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              {/* Registration Form */}
+              <div className="bg-gray-50 p-4 md:p-6 rounded-lg">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+                  Workshop Registration
+                </h2>
+                <div className="w-full rounded-lg">
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScuvlfPlRVYlJgmbI0Et4-mMAjT8YZpH8gMHsOR8p3zTUuj2A/viewform?embedded=true"
+                    className="w-full border-0"
+                    style={{ height: '2200px' }}
+                    title="Workshop Registration Form"
+                  >
+                    Loading…
+                  </iframe>
+                </div>
+              </div>
+
+              {/* Workshop Flyer */}
+              <div className="flex justify-center">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-lg w-full">
+                  <Image
+                    src="/images/workshop-64-squares-studio.jpg"
+                    alt="64 Squares Studio - 3-Day Premium Chess Workshop"
+                    width={600}
+                    height={900}
+                    className="w-full h-auto"
+                  />
+                </div>
               </div>
             </div>
 
