@@ -9,7 +9,8 @@
       "Bash(taskkill /PID 15380 /F)",
       "PowerShell(Stop-Process *)",
       "PowerShell(Get-Process *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git remote *)"
     ]
   }
 }

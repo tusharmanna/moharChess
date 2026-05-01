@@ -6,7 +6,7 @@ export const metadata = generateMeta({
   title: "Summer Chess Camp - Week 4",
   description: "Join MoharChess Summer Camp Week 4. An exciting week of chess learning, strategy, and fun for kids. Located in Suwanee, GA.",
   keywords: "summer chess camp week 4, kids chess camp, chess summer program, suwanee chess camp, youth chess camp atlanta",
-  ogImage: "/images/SummerCampJuly2025.jpg"
+  ogImage: "/images/summer-camp-flyer.jpg"
 });
 
 export default function SummerCampWeek4() {
@@ -53,7 +53,7 @@ export default function SummerCampWeek4() {
                 {/* Camp Banner */}
                 <div className="text-center">
                   <Image
-                    src="/images/SummerCampJuly2025.jpg"
+                    src="/images/summer-camp-flyer.jpg"
                     alt="Summer Camp Banner"
                     width={400}
                     height={300}
@@ -61,27 +61,6 @@ export default function SummerCampWeek4() {
                   />
                 </div>
 
-                {/* Camp Information */}
-                <div className="bg-teal-50 p-6 rounded-lg border border-teal-200">
-                  <h3 className="text-xl font-bold text-teal-800 mb-4 text-center">
-                    Camp Details
-                  </h3>
-                  <div className="space-y-3 text-gray-700">
-                    <p>
-                      <strong>Week:</strong> Week 4
-                    </p>
-                    <p>
-                      <strong>Time:</strong> 9:30 AM – 4:30 PM
-                    </p>
-                    <p>
-                      <strong>Ages:</strong> 7–13
-                    </p>
-                    <div className="mt-3 pt-3 border-t border-teal-200">
-                      <p className="font-semibold text-teal-800 mb-2">Entry Fee:</p>
-                      <p><strong>$350</strong> (includes all materials)</p>
-                    </div>
-                  </div>
-                </div>
 
                 {/* Contact Information */}
                 <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
