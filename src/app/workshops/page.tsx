@@ -1,13 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { generateMetadata as genMeta } from "@/lib/metadata";
+import RegistrationForm from '@/components/RegistrationForm';
 
-export const metadata = genMeta({
-  title: "Chess Workshops - Intensive Training Near Atlanta, GA",
-  description: "Intensive chess workshops for kids and teens near Atlanta, GA — serving Suwanee, Johns Creek, Alpharetta & Cumming. Learn openings, tactics, and endgames. All skill levels welcome.",
-  keywords: "chess workshop Suwanee, chess training Johns Creek, intensive chess Alpharetta, chess workshop Cumming GA, kids chess workshop Atlanta Georgia, chess tactics class near me",
-});
+const FORM_SRC = "https://docs.google.com/forms/d/e/1FAIpQLScuvlfPlRVYlJgmbI0Et4-mMAjT8YZpH8gMHsOR8p3zTUuj2A/viewform?embedded=true";
 
 export default function Workshops() {
   return (
@@ -42,22 +38,7 @@ export default function Workshops() {
 
             {/* Registration Form + Flyer */}
             <div className="grid md:grid-cols-2 gap-8 items-start">
-              {/* Registration Form */}
-              <div className="bg-gray-50 p-4 md:p-6 rounded-lg">
-                <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-                  Workshop Registration
-                </h2>
-                <div className="w-full rounded-lg">
-                  <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScuvlfPlRVYlJgmbI0Et4-mMAjT8YZpH8gMHsOR8p3zTUuj2A/viewform?embedded=true"
-                    className="w-full border-0"
-                    style={{ height: '2200px' }}
-                    title="Workshop Registration Form"
-                  >
-                    Loading…
-                  </iframe>
-                </div>
-              </div>
+              <RegistrationForm title="Workshop Registration" formSrc={FORM_SRC} />
 
               {/* Workshop Flyer */}
               <div className="flex justify-center">
