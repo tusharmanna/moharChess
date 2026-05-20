@@ -14,7 +14,11 @@
       "Bash(npx kill-port *)",
       "Bash(Get-Process -Name node -ErrorAction SilentlyContinue)",
       "Bash(Stop-Process -Force)",
-      "Bash(Start-Sleep -Seconds 2)"
+      "Bash(Start-Sleep -Seconds 2)",
+      "Bash(Get-ChildItem -Path \"E:\\\\work\\\\moharChess\\\\public\" -Force -Recurse)",
+      "Bash(Select-Object -Property FullName, Name)",
+      "PowerShell(\\(ls \"E:\\\\work\\\\moharChess\\\\public\\\\images\" -File\\).Name)",
+      "PowerShell(\\(ls \"E:\\\\work\\\\moharChess\\\\public\" -File\\).Name)"
     ]
   }
 }

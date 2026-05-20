@@ -10,14 +10,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <Link href="/">
+            <Link href="/" className="flex flex-col items-center">
               <Image
                 src="/images/mohar.jpg"
                 alt="MoharChess"
                 width={280}
                 height={80}
-                className="h-20 w-64 rounded-lg shadow-lg"
+                className="h-20 w-64"
               />
+              <div className="flex items-center gap-2 -mt-1">
+                <div className="h-px w-6 bg-stone-700"></div>
+                <span className="text-stone-700 font-manrope font-semibold tracking-[0.2em] text-xs uppercase">
+                  Chess Academy
+                </span>
+                <div className="h-px w-6 bg-stone-700"></div>
+              </div>
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
               MoharChess provides quality chess education for all ages with individualized training.
