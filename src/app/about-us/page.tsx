@@ -137,7 +137,7 @@ export default function AboutUs() {
             <div className="text-gray-700">
               <div className="text-2xl mb-2">📍</div>
               <h4 className="font-bold mb-2">LOCATION</h4>
-              <p>JOHNS CREEK, GEORGIA</p>
+              <p>SUWANEE, GA</p>
             </div>
           </div>
         </div>
