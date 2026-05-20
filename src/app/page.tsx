@@ -96,6 +96,9 @@ export default function Home() {
                 Become a Chess Pro with{" "}
                 <span className="text-orange-400">MoharChess!</span>
               </h1>
+              <p className="text-2xl font-playfair text-orange-400 italic font-semibold">
+                Building disciplined minds, one move at a time.
+              </p>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Experience individualized chess training that develops discipline, analytical skills, and confidence for all ages.
               </p>

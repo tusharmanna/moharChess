@@ -55,7 +55,7 @@ export default function AboutUs() {
                   MOHUA MAITY
                 </h2>
                 <p className="text-lg text-orange-400 font-semibold">
-                  FOUNDER & CEO, MOHAR CHESS
+                  FOUNDER & CEO, MOHAR CHESS ACADEMY
                 </p>
                 <p className="text-gray-600 mt-2">
                   Vice President, Georgia Chess Association
@@ -118,7 +118,7 @@ export default function AboutUs() {
               <h3 className="text-xl font-bold">Join Our Chess Community</h3>
             </div>
             <div className="text-center mt-4">
-              <p className="text-gray-700 text-lg">Hosted By: Mohar Chess - Georgia Chess Association</p>
+              <p className="text-gray-700 text-lg">Hosted By: Mohar Chess Academy</p>
             </div>
           </div>
 
