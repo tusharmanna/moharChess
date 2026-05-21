@@ -214,6 +214,16 @@ export default function Home() {
                 Learn More →
               </Link>
             </div>
+
+            <div className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-xl font-semibold text-teal-800 mb-3">Tournaments & Events</h3>
+              <p className="text-gray-600 mb-4">
+                Participate in USCF-rated tournaments and special chess competitions hosted throughout the year.
+              </p>
+              <Link href="/tournaments" className="text-orange-500 hover:text-orange-600 font-semibold">
+                View Calendar →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
