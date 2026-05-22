@@ -139,20 +139,6 @@ const Header = () => {
               </Link>
               <div className="relative group">
                 <button className="flex items-center space-x-1 text-gray-700 hover:text-teal-800 transition-colors font-medium">
-                  <span>Tournaments</span>
-                  <FaChevronDown size={12} />
-                </button>
-                <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border">
-                  <Link href="/tournaments" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg font-semibold text-orange-500">View Calendar</Link>
-                  <a href="https://chess67.com/club/mohar-chess/tournaments" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 font-semibold text-orange-500">All Tournaments</a>
-                  <Link href="/tournaments/may" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100">May</Link>
-                  <Link href="/tournaments/june" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100">June</Link>
-                  <Link href="/tournaments/july" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100">July</Link>
-                  <Link href="/tournaments/august" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 rounded-b-lg">August</Link>
-                </div>
-              </div>
-              <div className="relative group">
-                <button className="flex items-center space-x-1 text-gray-700 hover:text-teal-800 transition-colors font-medium">
                   <span>Our Programs</span>
                   <FaChevronDown size={12} />
                 </button>
@@ -171,6 +157,7 @@ const Header = () => {
                       <Link href="/summer-camp/week4" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 rounded-b-lg text-sm">Week 4</Link>
                     </div>
                   </div>
+                  <a href="https://chess67.com/club/mohar-chess/tournaments" target="_blank" rel="noopener noreferrer" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">TOURNAMENTS</a>
                   <Link href="/workshops" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">WORKSHOPS</Link>
                   <Link href="/after-school-program" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium border-b border-gray-100">AFTER SCHOOL PROGRAM</Link>
                   <Link href="/browse-sessions" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium rounded-b-lg">BROWSE SESSIONS</Link>
@@ -228,25 +215,6 @@ const Header = () => {
               <Link href="/instructors" className="text-gray-600 hover:text-teal-800 transition-colors font-medium pl-4 text-sm">
                 Instructors
               </Link>
-              <div>
-                <button
-                  onClick={() => setIsTournamentsOpen(!isTournamentsOpen)}
-                  className="flex items-center justify-between w-full text-gray-700 hover:text-teal-800 transition-colors font-medium"
-                >
-                  <span>Tournaments</span>
-                  <FaChevronDown size={10} className={`transition-transform ${isTournamentsOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {isTournamentsOpen && (
-                  <div className="pl-4 mt-2 space-y-2">
-                    <Link href="/tournaments" className="block text-orange-500 hover:text-orange-600 transition-colors font-semibold text-sm">View Calendar</Link>
-                    <a href="https://chess67.com/club/mohar-chess/tournaments" target="_blank" rel="noopener noreferrer" className="block text-orange-500 hover:text-orange-600 transition-colors font-semibold text-sm">All Tournaments</a>
-                    <Link href="/tournaments/may" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">May</Link>
-                    <Link href="/tournaments/june" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">June</Link>
-                    <Link href="/tournaments/july" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">July</Link>
-                    <Link href="/tournaments/august" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">August</Link>
-                  </div>
-                )}
-              </div>
               <div className="text-gray-700 font-medium">Our Programs</div>
               <div className="pl-4 space-y-2">
                 <div>
@@ -267,6 +235,7 @@ const Header = () => {
                     </div>
                   )}
                 </div>
+                <a href="https://chess67.com/club/mohar-chess/tournaments" target="_blank" rel="noopener noreferrer" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">TOURNAMENTS</a>
                 <Link href="/workshops" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">WORKSHOPS</Link>
                 <Link href="/after-school-program" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">AFTER SCHOOL PROGRAM</Link>
                 <Link href="/browse-sessions" className="block text-gray-600 hover:text-teal-800 transition-colors font-medium text-sm">BROWSE SESSIONS</Link>
