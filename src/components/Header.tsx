@@ -164,7 +164,8 @@ const Header = () => {
                       <FaChevronDown size={10} className="-rotate-90" />
                     </div>
                     <div className="absolute left-full top-0 w-36 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover/summercamp:opacity-100 group-hover/summercamp:visible transition-all duration-300 z-50 border">
-                      <Link href="/summer-camp/week1" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg text-sm">Week 1</Link>
+                      <Link href="/summer-camp/registration" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-t-lg text-sm font-semibold text-orange-500">Registration</Link>
+                      <Link href="/summer-camp/week1" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 text-sm">Week 1</Link>
                       <Link href="/summer-camp/week2" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 text-sm">Week 2</Link>
                       <Link href="/summer-camp/week3" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 text-sm">Week 3</Link>
                       <Link href="/summer-camp/week4" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-t border-gray-100 rounded-b-lg text-sm">Week 4</Link>
@@ -175,6 +176,9 @@ const Header = () => {
                   <Link href="/browse-sessions" className="block px-4 py-3 text-gray-800 hover:bg-gray-100 font-medium rounded-b-lg">BROWSE SESSIONS</Link>
                 </div>
               </div>
+              <Link href="/event-calendar" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
+                Event Calendar
+              </Link>
               <Link href="/our-gallery" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Our Gallery
               </Link>
@@ -255,6 +259,7 @@ const Header = () => {
                   </button>
                   {isSummerCampOpen && (
                     <div className="pl-4 mt-2 space-y-2">
+                      <Link href="/summer-camp/registration" className="block text-orange-500 hover:text-orange-600 transition-colors font-semibold text-sm">Registration</Link>
                       <Link href="/summer-camp/week1" className="block text-gray-500 hover:text-teal-800 transition-colors text-sm">Week 1</Link>
                       <Link href="/summer-camp/week2" className="block text-gray-500 hover:text-teal-800 transition-colors text-sm">Week 2</Link>
                       <Link href="/summer-camp/week3" className="block text-gray-500 hover:text-teal-800 transition-colors text-sm">Week 3</Link>
@@ -268,6 +273,9 @@ const Header = () => {
               </div>
               <Link href="/online-chess-school" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Online Chess School
+              </Link>
+              <Link href="/event-calendar" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
+                Event Calendar
               </Link>
               <Link href="/our-gallery" className="text-gray-700 hover:text-teal-800 transition-colors font-medium">
                 Our Gallery
