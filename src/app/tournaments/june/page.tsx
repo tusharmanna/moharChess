@@ -68,7 +68,7 @@ export default function JuneTournaments() {
                   </h3>
                   <div className="space-y-3 text-gray-700">
                     <p>
-                      <strong>Date:</strong> June 2026
+                      <strong>Date:</strong> 7th June 2026
                     </p>
                     <p>
                       <strong>Time:</strong> 09:30 am to 04:30 pm
@@ -124,8 +124,8 @@ export default function JuneTournaments() {
                     Tournament Location
                   </h3>
                   <div className="text-gray-700">
-                    <p className="font-semibold">Best Western</p>
-                    <p>907 Holcomb Bridge Rd</p>
+                    <p className="font-semibold">Holiday Inn</p>
+                    <p>909 Holcomb Bridge</p>
                     <p>Roswell, GA 30076</p>
                   </div>
                 </div>
