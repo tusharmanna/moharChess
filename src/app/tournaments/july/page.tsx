@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "July Chess Tournaments - USCF Rated Scholastic Competitions",
-  description: "Join our USCF-rated scholastic chess tournaments in July. 4-round Swiss system with sections for all skill levels. Located in Roswell, GA. Tournament preparation and competitive chess.",
-  keywords: "uscf tournament, chess tournament, scholastic chess, rated chess tournament, georgia chess tournament, youth chess competition, july tournament",
+  title: "Back to School Chess Tournament - July 25, 2026",
+  description: "Join the Back to School Chess Tournament on July 25, 2026. USCF-rated scholastic chess tournament with 4-round Swiss system. All skill levels welcome. Located in Roswell, GA.",
+  keywords: "back to school chess tournament, uscf tournament, scholastic chess, rated chess tournament, georgia chess tournament, youth chess competition, july 25 2026",
   ogImage: "/images/rated-banner.jpg"
 });
 
@@ -17,10 +17,10 @@ export default function JulyTournaments() {
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-teal-800">
-              July Chess Tournaments
+              Back to School Chess Tournament
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-600">
-              Compete in USCF-rated tournaments and test your skills
+              July 25, 2026 - USCF-rated scholastic chess competition for all skill levels
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function JulyTournaments() {
                   </h3>
                   <div className="space-y-3 text-gray-700">
                     <p>
-                      <strong>Date:</strong> July 2026
+                      <strong>Date:</strong> July 25, 2026 (Saturday)
                     </p>
                     <p>
                       <strong>Time:</strong> 09:30 am to 04:30 pm

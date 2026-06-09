@@ -18,7 +18,10 @@
       "Bash(Get-ChildItem -Path \"E:\\\\work\\\\moharChess\\\\public\" -Force -Recurse)",
       "Bash(Select-Object -Property FullName, Name)",
       "PowerShell(\\(ls \"E:\\\\work\\\\moharChess\\\\public\\\\images\" -File\\).Name)",
-      "PowerShell(\\(ls \"E:\\\\work\\\\moharChess\\\\public\" -File\\).Name)"
+      "PowerShell(\\(ls \"E:\\\\work\\\\moharChess\\\\public\" -File\\).Name)",
+      "Skill(run)",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__new_page",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__navigate_page"
     ]
   }
 }

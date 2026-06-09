@@ -3,9 +3,9 @@ import { FaCalendarAlt, FaClock, FaTrophy, FaMapMarkerAlt, FaEnvelope, FaPhoneVo
 import { generateMetadata as generateMeta } from "@/lib/metadata";
 
 export const metadata = generateMeta({
-  title: "Upcoming Events - Chess Tournaments Near Atlanta, GA",
-  description: "Upcoming USCF-rated chess tournaments and events near Atlanta, GA. Open to players from Suwanee, Johns Creek, Alpharetta, Cumming & surrounding areas. All skill levels welcome.",
-  keywords: "chess tournaments Atlanta GA, chess events Suwanee, USCF tournament Johns Creek, chess competition Alpharetta, chess tournament Cumming GA, scholastic chess Georgia"
+  title: "Back to School Chess Tournament - July 25, 2026",
+  description: "Back to School Chess Tournament on July 25, 2026. USCF-rated scholastic chess tournament near Atlanta, GA. Open to players from Suwanee, Johns Creek, Alpharetta, Cumming & surrounding areas. All skill levels welcome.",
+  keywords: "back to school chess tournament, chess tournaments Atlanta GA, USCF tournament, scholastic chess Georgia, chess competition Roswell GA"
 });
 
 export default function UpcomingEvents() {
@@ -16,7 +16,7 @@ export default function UpcomingEvents() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-bold font-playfair mb-4 text-teal-800">
-              Upcoming <span className="text-orange-400">Events</span>
+              Back to School <span className="text-orange-400">Chess Tournament</span>
             </h1>
             <nav className="text-gray-500">
               <Link href="/" className="hover:text-orange-400 transition-colors">Home</Link>
@@ -38,11 +38,11 @@ export default function UpcomingEvents() {
                 <div className="flex items-center space-x-3 mb-4">
                   <FaTrophy className="text-orange-400 text-2xl" />
                   <h2 className="text-2xl lg:text-3xl font-bold font-playfair text-teal-800">
-                    USCF-Rated Scholastic Tournament
+                    Back to School Chess Tournament
                   </h2>
                 </div>
                 <p className="text-gray-600 text-lg">
-                  4-Round Swiss System Tournament - All Skill Levels Welcome
+                  4-Round USCF-Rated Swiss System - All Skill Levels Welcome
                 </p>
               </div>
 
@@ -57,7 +57,7 @@ export default function UpcomingEvents() {
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-teal-800 mb-2">Date</h3>
-                        <p className="text-gray-600 font-medium">October 12, 2025 (Sunday)</p>
+                        <p className="text-gray-600 font-medium">July 25, 2026 (Saturday)</p>
                       </div>
                     </div>
 
