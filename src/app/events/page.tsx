@@ -82,9 +82,9 @@ export default function UpcomingEvents() {
                       <div>
                         <h3 className="text-lg font-semibold text-teal-800 mb-2">Location</h3>
                         <div className="text-gray-600">
-                          <p className="font-medium">Holiday Inn</p>
+                          <p className="font-medium">Holiday Inn Atlanta/Roswell by IHG</p>
                           <p>909 Holcomb Bridge Rd</p>
-                          <p>Roswell, GA 30076</p>
+                          <p>Roswell, GA 30076, USA</p>
                         </div>
                       </div>
                     </div>

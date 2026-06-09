@@ -124,9 +124,9 @@ export default function JulyTournaments() {
                     Tournament Location
                   </h3>
                   <div className="text-gray-700">
-                    <p className="font-semibold">Best Western</p>
-                    <p>907 Holcomb Bridge Rd</p>
-                    <p>Roswell, GA 30076</p>
+                    <p className="font-semibold">Holiday Inn Atlanta/Roswell by IHG</p>
+                    <p>909 Holcomb Bridge Rd</p>
+                    <p>Roswell, GA 30076, USA</p>
                   </div>
                 </div>
 
