@@ -25,7 +25,11 @@
       "Bash(mv \"WhatsApp Image 2026-06-13 at 10.57.02 AM.jpeg\" \"flyer-1.jpeg\")",
       "Bash(mv \"WhatsApp Image 2026-06-13 at 10.57.02 AM \\(1\\).jpeg\" \"flyer-2.jpeg\")",
       "Bash(mv \"WhatsApp Image 2026-06-13 at 10.57.02 AM \\(2\\).jpeg\" \"flyer-3.jpeg\")",
-      "Bash(mv \"WhatsApp Image 2026-06-13 at 10.57.02 AM \\(3\\).jpeg\" \"flyer-4.jpeg\")"
+      "Bash(mv \"WhatsApp Image 2026-06-13 at 10.57.02 AM \\(3\\).jpeg\" \"flyer-4.jpeg\")",
+      "Bash(timeout 30 bash *)",
+      "Bash(curl -s http://localhost:3001)",
+      "mcp__plugin_playwright_playwright__browser_tabs",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot"
     ]
   }
 }

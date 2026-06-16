@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -14,6 +15,7 @@ const flyers = [
 const AUTO_ADVANCE_MS = 4000;
 
 export default function FlyersCarousel() {
+  const router = useRouter();
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -55,19 +57,22 @@ export default function FlyersCarousel() {
               style={{ transform: `translateX(-${current * 100}%)` }}
             >
               {flyers.map((flyer, index) => (
-                <div
+                <button
                   key={flyer.src}
+                  type="button"
+                  onClick={() => router.push("/event-calendar")}
                   className="flex h-[360px] w-full flex-shrink-0 items-center justify-center sm:h-[460px] lg:h-[520px]"
+                  aria-label={`${flyer.alt}. Click to view event calendar`}
                 >
                   <Image
                     src={flyer.src}
                     alt={flyer.alt}
                     width={600}
                     height={840}
-                    className="h-full w-auto object-contain"
+                    className="h-full w-auto cursor-pointer object-contain transition-opacity hover:opacity-90"
                     priority={index === 0}
                   />
-                </div>
+                </button>
               ))}
             </div>
           </div>
