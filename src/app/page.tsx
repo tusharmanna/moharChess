@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaChess, FaTrophy, FaUsers, FaGraduationCap } from "react-icons/fa";
 import { generateMetadata as genMeta } from "@/lib/metadata";
-import FlyersCarousel from "@/components/FlyersCarousel";
 
 export const metadata = genMeta({
   title: "Chess Classes for Kids in Suwanee, Johns Creek & Atlanta, GA",
@@ -88,9 +87,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      {/* Flyers Carousel - just below the header */}
-      <FlyersCarousel />
-
       {/* Hero Section */}
       <section className="bg-white py-20">
         <div className="container mx-auto px-4">
